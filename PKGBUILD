@@ -21,6 +21,7 @@ source=("https://chromium.googlesource.com/chromiumos/third_party/kernel/+archiv
         '0001-exynos-drm-smem-start-len.patch'
         'mwifiex-cros.patch'
         'mwifiex-do-not-create-AP-and-P2P-interfaces-upon-driver-loading.patch'
+        'set_smem_len_for_fbdev.patch'
         'config'
         'kernel.its'
         'kernel.keyblock'
@@ -33,8 +34,9 @@ md5sums=('SKIP'
          'dc8c3ffa65edd9ee30a1f9805d2b3460'
          '25b21eebbb7bde980f666013e3fd3705'
          'df77c8bcdaf51b087fd38cacb1633c82'
-         '3853f4a83db95448b0ebcd2810cd72fe'
-         '1e66637b4771568d2dfa161f5e0357f7'
+         'e5a4f4855bf609e27b611fe7d8908ae3'
+         'a60d82a86e5f772dca35afe10131cca3'
+         '8cca1978413c83311e679b4370245a7c'
          '61c5ff73c136ed07a7aadbf58db3d96a'
          '584777ae88bce2c5659960151b64c7d8')
 
@@ -55,6 +57,9 @@ prepare() {
   # do not create uap0 and p2p0 interfaces by default
   patch -p1 -i ../mwifiex-do-not-create-AP-and-P2P-interfaces-upon-driver-loading.patch
 
+  #http://code.google.com/p/chromium/issues/detail?id=368270
+  patch -p1 -i ../set_smem_len_for_fbdev.patch
+
   # Kernel configuration
   cp "${srcdir}/config" .config
 
@@ -72,14 +77,14 @@ build() {
 
   # load configuration
   # Configure the kernel. Replace the line below with one of your choice.
-  #make menuconfig # CLI menu for configuration
   #make nconfig # new CLI menu for configuration
   #make xconfig # X-based configuration
-  #make oldconfig # using old config from previous kernel version
+  make oldconfig # using old config from previous kernel version
+  make menuconfig # CLI menu for configuration
   # ... or manually edit .config
 
   # Copy back our configuration (use with new kernel version)
-  #cp ./.config ../${pkgbase}.config
+  cp ./.config ../${pkgbase}.config
 
   ####################
   # stop here
@@ -94,15 +99,15 @@ build() {
   make ${MAKEFLAGS} zImage modules dtbs
   cd arch/arm/boot
   mkimage -f kernel.its vmlinux.uimg
-  vbutil_kernel --pack vmlinux.kpart --version 1 --vmlinuz vmlinux.uimg --arch arm --keyblock ${srcdir}/kernel.keyblock --signprivate ${srcdir}/kernel_data_key.vbprivk
+  #vbutil_kernel --pack vmlinux.kpart --version 1 --vmlinuz vmlinux.uimg --arch arm --keyblock ${srcdir}/kernel.keyblock --signprivate ${srcdir}/kernel_data_key.vbprivk
 }
 
 package_linux-chromebook2() {
   pkgdesc="The Linux Kernel and modules - Samsung ARM Chromebook 2 kernel and modules"
   depends=('coreutils' 'linux-firmware' 'module-init-tools>=3.16')
   optdepends=('crda: to set the correct wireless channels of your country')
-  provides=('linux26' "linux=${pkgver}")
-  conflict=('linux')
+#  provides=('linux26' "linux=${pkgver}")
+#  conflict=('linux')
   install=${pkgname}.install
 
   cd ${srcdir}/chromeos-${_basever}
@@ -116,7 +121,8 @@ package_linux-chromebook2() {
 
   mkdir -p "${pkgdir}"/{lib/modules,lib/firmware,boot/dtbs}
   make INSTALL_MOD_PATH="${pkgdir}" modules_install
-  cp arch/arm/boot/vmlinux.uimg arch/arm/boot/vmlinux.kpart "${pkgdir}/boot"
+  #cp arch/arm/boot/vmlinux.uimg arch/arm/boot/vmlinux.kpart "${pkgdir}/boot"
+  cp arch/arm/boot/vmlinux.uimg "${pkgdir}/boot/vmlinux2.uimg"
 
   # set correct depmod command for install
   sed \
