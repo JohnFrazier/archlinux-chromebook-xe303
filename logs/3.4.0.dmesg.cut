@@ -1,0 +1,609 @@
+Booting Linux on physical CPU 0
+Initializing cgroup subsys cpuset
+Initializing cgroup subsys cpu
+Linux version 3.4.0-ARCH (nobody@root-chroot-copy) (gcc version 4.8.2 20131219 (prerelease) (GCC) ) #1 SMP Sun May 25 18:58:05 MDT 2014
+revision 4 (ARMv7), cr=10c5387d
+CPU: PIPT / VIPT nonaliasing data cache, PIPT instruction cache
+Machine: SAMSUNG EXYNOS5 (Flattened Device Tree), model: Google Snow
+Ramoops: 41f00000 - 41ffffff
+Memory policy: ECC disabled, Data cache writealloc
+CPU EXYNOS5250 (id 0x43520010)
+exynos5_init_clocks: initializing clocks
+S3C24XX Clocks, Copyright 2004 Simtec Electronics
+exynos5_setup_clocks: registering clocks
+exynos5_setup_clocks: xtal is 24000000
+EXYNOS5: PLL settings, A=1700000000, B=800000000, C=333000000
+M=1600000000, E=96000000 V=300000000 G=533000000
+EXYNOS5: ARMCLK=1700000000, CDREX=800000000, ACLK400G3D=533000000
+ACLK333=333000000, ACLK266=266666666, ACLK200=200000000
+ACLK166=166500000, ACLK66=66666666
+sclk_fimd: source is mout_mpll_user (6), rate is 266666666
+aclk_266_gscl: source is aclk_266 (1), rate is 266666666
+sclk_g3d: source is mout_mpll_user (0), rate is 800000000
+sclk_sata: source is mout_mpll_user (0), rate is 66666666
+sclk_gscl_wrap: source is ext_xtal (0), rate is 24000000
+sclk_gscl_wrap: source is ext_xtal (0), rate is 24000000
+sclk_cam0: source is ext_xtal (0), rate is 24000000
+sclk_cam1: source is ext_xtal (0), rate is 24000000
+sclk_usbdrd30: source is mout_mpll (0), rate is 66666666
+On node 0 totalpages: 524032
+  Normal zone: 3568 pages used for memmap
+  Normal zone: 0 pages reserved
+  Normal zone: 452880 pages, LIFO batch:31
+  HighMem zone: 528 pages used for memmap
+  HighMem zone: 67056 pages, LIFO batch:15
+PERCPU: Embedded 9 pages/cpu @8190e000 s12608 r8192 d16064 u36864
+pcpu-alloc: s12608 r8192 d16064 u36864 alloc=9*4096
+1 
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 519936
+Kernel command line: daisy console=tty1 root=/dev/mmcblk1p3 rootwait rw
+PID hash table entries: 4096 (order: 2, 16384 bytes)
+Dentry cache hash table entries: 262144 (order: 8, 1048576 bytes)
+Inode-cache hash table entries: 131072 (order: 7, 524288 bytes)
+Memory: 31MB 2016MB = 2047MB total
+Memory: 2066684k/2067708k available, 29444k reserved, 270080K highmem
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    vmalloc : 0xf0000000 - 0xff000000   ( 240 MB)
+    lowmem  : 0x80000000 - 0xef800000   (1784 MB)
+    pkmap   : 0x7fe00000 - 0x80000000   (   2 MB)
+    modules : 0x7f000000 - 0x7fe00000   (  14 MB)
+      .text : 0x80008000 - 0x8079eb68   (7771 kB)
+      .init : 0x8079f000 - 0x807e7140   ( 289 kB)
+      .data : 0x807e8000 - 0x808590d0   ( 453 kB)
+       .bss : 0x808590f4 - 0x808f0000   ( 604 kB)
+SLUB: Genslabs=11, HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+Hierarchical RCU implementation.
+NR_IRQS:549
+irq: no irq domain found for /interrupt-controller@10440000 !
+of_irq_init: children remain, but no parents
+Initial usec timer 10120438
+sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 178956ms
+Console: colour dummy device 80x30
+enabled
+allocated 4194304 bytes of page_cgroup
+please try 'cgroup_disable=memory' option if you don't want memory cgroups
+Calibrating delay loop... 1694.10 BogoMIPS (lpj=4235264)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+Initializing cgroup subsys cpuacct
+Initializing cgroup subsys memory
+Initializing cgroup subsys devices
+Initializing cgroup subsys freezer
+Initializing cgroup subsys blkio
+Initializing cgroup subsys perf_event
+CPU: Testing write buffer coherency: ok
+ftrace: allocating 21903 entries in 65 pages
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+hw perfevents: enabled with ARMv7 Cortex-A15 PMU driver, 7 counters available
+Setting up static identity map for 0x4057af30 - 0x4057af88
+CPU1: Booted secondary processor
+CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+CPU1: Unknown IPI message 0x1
+Brought up 2 CPUs
+SMP: Total of 2 processors activated (3388.21 BogoMIPS).
+devtmpfs: initialized
+xor: measuring software checksum speed
+   arm4regs  :  3002.400 MB/sec
+   8regs     :  2993.600 MB/sec
+   8regs_prefetch:  2682.400 MB/sec
+   32regs    :  2824.000 MB/sec
+   32regs_prefetch:  2540.000 MB/sec
+xor: using function: arm4regs (3002.400 MB/sec)
+gpiochip_add: registered GPIOs 0 to 7 on device: GPA0
+gpiochip_add: registered GPIOs 9 to 14 on device: GPA1
+gpiochip_add: registered GPIOs 16 to 23 on device: GPA2
+gpiochip_add: registered GPIOs 25 to 29 on device: GPB0
+gpiochip_add: registered GPIOs 31 to 35 on device: GPB1
+gpiochip_add: registered GPIOs 37 to 40 on device: GPB2
+gpiochip_add: registered GPIOs 42 to 45 on device: GPB3
+gpiochip_add: registered GPIOs 47 to 53 on device: GPC0
+gpiochip_add: registered GPIOs 55 to 58 on device: GPC1
+gpiochip_add: registered GPIOs 60 to 66 on device: GPC2
+gpiochip_add: registered GPIOs 68 to 74 on device: GPC3
+gpiochip_add: registered GPIOs 84 to 87 on device: GPD0
+gpiochip_add: registered GPIOs 89 to 96 on device: GPD1
+gpiochip_add: registered GPIOs 98 to 103 on device: GPY0
+gpiochip_add: registered GPIOs 105 to 108 on device: GPY1
+gpiochip_add: registered GPIOs 110 to 115 on device: GPY2
+gpiochip_add: registered GPIOs 117 to 124 on device: GPY3
+gpiochip_add: registered GPIOs 126 to 133 on device: GPY4
+gpiochip_add: registered GPIOs 135 to 142 on device: GPY5
+gpiochip_add: registered GPIOs 144 to 151 on device: GPY6
+gpiochip_add: registered GPIOs 76 to 82 on device: GPC4
+gpiochip_add: registered GPIOs 153 to 160 on device: GPX0
+gpiochip_add: registered GPIOs 162 to 169 on device: GPX1
+gpiochip_add: registered GPIOs 171 to 178 on device: GPX2
+gpiochip_add: registered GPIOs 180 to 187 on device: GPX3
+gpiochip_add: registered GPIOs 189 to 196 on device: GPE0
+gpiochip_add: registered GPIOs 198 to 199 on device: GPE1
+gpiochip_add: registered GPIOs 201 to 204 on device: GPF0
+gpiochip_add: registered GPIOs 206 to 209 on device: GPF1
+gpiochip_add: registered GPIOs 211 to 218 on device: GPG0
+gpiochip_add: registered GPIOs 220 to 227 on device: GPG1
+gpiochip_add: registered GPIOs 229 to 230 on device: GPG2
+gpiochip_add: registered GPIOs 232 to 235 on device: GPH0
+gpiochip_add: registered GPIOs 237 to 244 on device: GPH1
+gpiochip_add: registered GPIOs 246 to 253 on device: GPV0
+gpiochip_add: registered GPIOs 255 to 262 on device: GPV1
+gpiochip_add: registered GPIOs 264 to 271 on device: GPV2
+gpiochip_add: registered GPIOs 273 to 280 on device: GPV3
+gpiochip_add: registered GPIOs 282 to 283 on device: GPV4
+gpiochip_add: registered GPIOs 285 to 291 on device: GPZ
+dummy: 
+NET: Registered protocol family 16
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+No ATAGs?
+hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+hw-breakpoint: maximum watchpoint size is 8 bytes.
+S3C Power Management, Copyright 2004 Simtec Electronics
+EXYNOS5250 PMU Initialize
+EXYNOS: Initializing architecture
+s3c24xx-pwm s3c24xx-pwm.0: tin at 33333333, tdiv at 33333333, tin=divclk, base 0
+bio: create slab <bio-0> at 0
+fixed-dummy: 
+hsichub-reset-l: 
+wwan-en: 
+wifi-en: 
+wifi-rst-l: 
+codec-en: 
+using legacy suspend method
+using legacy resume method
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+s3c-i2c s3c2440-i2c.0: slave address 0x00
+s3c-i2c s3c2440-i2c.0: bus frequency set to 378 KHz
+vdd_mydp: 1000 mV 
+vdd_ldo7: 1100 mV 
+vdd_ldo8: 1000 mV 
+vdd_ldo10: 1800 mV 
+vdd_ldo11: 1800 mV 
+vdd_ldo12: 3000 mV 
+vdd_ldo13: 1800 mV 
+vdd_ldo14: 1800 mV 
+vdd_ldo15: 1000 mV 
+vdd_ldo16: 1800 mV 
+vdd_bridge: 1200 mV 
+vdd_mif: 950 <--> 1300 mV at 1000 mV 
+vdd_arm: 850 <--> 1350 mV at 1300 mV 
+vdd_int: 900 <--> 1200 mV at 1012 mV 
+vdd_g3d: 850 <--> 1300 mV at 1200 mV 
+vdd_1v8: 1800 mV 
+vdd_ummc: 900 <--> 3000 mV at 2850 mV 
+en32khz_ap: 
+en32khz_cp: 
+enp32khz: 
+max77686 0-0009: device found
+s3c-i2c s3c2440-i2c.0: i2c-0: S3C I2C adapter
+s3c-i2c s3c2440-i2c.1: slave address 0x00
+s3c-i2c s3c2440-i2c.1: bus frequency set to 378 KHz
+s3c-i2c s3c2440-i2c.1: i2c-1: S3C I2C adapter
+s3c-i2c s3c2440-i2c.2: slave address 0x00
+s3c-i2c s3c2440-i2c.2: bus frequency set to 65 KHz
+s3c-i2c s3c2440-i2c.2: i2c-2: S3C I2C adapter
+s3c-i2c s3c2440-i2c.3: slave address 0x00
+s3c-i2c s3c2440-i2c.3: bus frequency set to 65 KHz
+s3c-i2c s3c2440-i2c.3: i2c-3: S3C I2C adapter
+s3c-i2c s3c2440-i2c.4: GPIO-based arbitration enabled
+s3c-i2c s3c2440-i2c.4: slave address 0x00
+s3c-i2c s3c2440-i2c.4: bus frequency set to 65 KHz
+tps65090 4-0048: No cache defaults, reading back from HW
+tps65090 4-0048: Disabling irq acks to chip.
+vcd_led: 12000 mV 
+video_mid: 5000 mV 
+wwan_r: 3300 mV 
+sdcard: 3300 mV 
+camout: 3300 mV 
+lcd_vdd: 3300 mV 
+video_mid_1a: 5000 mV 
+s3c-i2c s3c2440-i2c.4: i2c-4: S3C I2C adapter
+s3c-i2c s3c2440-i2c.5: slave address 0x00
+s3c-i2c s3c2440-i2c.5: bus frequency set to 65 KHz
+s3c-i2c s3c2440-i2c.5: i2c-5: S3C I2C adapter
+s3c-i2c s3c2440-i2c.7: slave address 0x00
+s3c-i2c s3c2440-i2c.7: bus frequency set to 65 KHz
+s3c-i2c s3c2440-i2c.7: i2c-7: S3C I2C adapter
+s3c-i2c 12ce0000.i2c: slave address 0x00
+s3c-i2c 12ce0000.i2c: bus frequency set to 378 KHz
+s3c-i2c 12ce0000.i2c: i2c-8: S3C I2C adapter
+Linux media interface: v0.10
+Linux video capture interface: v2.00
+Advanced Linux Sound Architecture Driver Version 1.0.25.
+EXYNOS5250: Adaptive Support Voltage init
+EXYNOS5250: ASV lock int: 0 g3d: 0 arm: 0
+EXYNOS5250: ORIG: 7 MOD: 0 RESULT: 7
+EXYNOS5250 MIF: RESULT: 0
+Switching to clocksource mct-frc
+NET: Registered protocol family 2
+IP route cache hash table entries: 65536 (order: 6, 262144 bytes)
+TCP established hash table entries: 262144 (order: 9, 2097152 bytes)
+TCP bind hash table entries: 65536 (order: 8, 1310720 bytes)
+TCP: Hash tables configured (established 262144 bind 65536)
+TCP: reno registered
+UDP hash table entries: 1024 (order: 3, 49152 bytes)
+UDP-Lite hash table entries: 1024 (order: 3, 49152 bytes)
+NET: Registered protocol family 1
+s3c-adc 12d10000.adc: attached adc driver
+highmem bounce pool size: 64 pages
+VFS: Disk quotas dquot_6.5.2
+Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+Btrfs loaded
+msgmni has been set to 3508
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+io scheduler noop registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+dma-pl330 dma-pl330.0: Loaded driver for PL330 DMAC-2364208
+dma-pl330 dma-pl330.0: 	DBUFF-32x4bytes Num_Chans-8 Num_Peri-32 Num_Events-32
+dma-pl330 dma-pl330.1: Loaded driver for PL330 DMAC-2364208
+dma-pl330 dma-pl330.1: 	DBUFF-32x4bytes Num_Chans-8 Num_Peri-32 Num_Events-32
+dma-pl330 dma-pl330.2: Loaded driver for PL330 DMAC-2364208
+dma-pl330 dma-pl330.2: 	DBUFF-64x8bytes Num_Chans-8 Num_Peri-1 Num_Events-32
+chromeos-ec-i2c 4-001e: protocol version: 2
+chromeos-ec-i2c 4-001e: Chrome EC (I2C)
+Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+tpm_tis_i2c 3-0020: 1.2 TPM (device-id 0xB)
+enabled
+ramoops: pstore probed successfully
+Initialized drm 1.1.0 20060810
+Attached IOMMU controller to exynos5-fb device.
+*ERROR* hdmiphy's pll could not reach steady state.
+s5p-mixer s5p-mixer: probe start
+Attached IOMMU controller to s5p-mixer device.
+exynos-drm exynos-drm.0: No SYSMMU found
+Attached IOMMU controller to exynos-drm.0 device.
+Supports vblank timestamp caching Rev 1 (10.10.2010).
+No driver support for vblank timestamp query.
+s5p-dp s5p-dp: unable to handle edid
+s5p-dp s5p-dp: EDID data does not include any extensions.
+s5p-dp s5p-dp: EDID Read success!
+s5p-dp s5p-dp: Link Training success!
+Console: switching to colour frame buffer device 170x48
+fb0:  frame buffer device
+drm: registered panic notifier
+Initialized exynos 1.0.0 20110530 on minor 0
+v4 support
+mali mali.0: Probed as mali0
+loop: module loaded
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+s5p-ehci s5p-ehci: S5P EHCI Host Controller
+s5p-ehci s5p-ehci: new USB bus registered, assigned bus number 1
+s5p-ehci s5p-ehci: irq 103, io mem 0x12110000
+s5p-ehci s5p-ehci: USB 0.0 started, EHCI 1.00
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: S5P EHCI Host Controller
+usb usb1: Manufacturer: Linux 3.4.0-ARCH ehci_hcd
+usb usb1: SerialNumber: s5p-ehci
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 3 ports detected
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+exynos-ohci exynos-ohci: Already power on PHY
+exynos-ohci exynos-ohci: EXYNOS OHCI Host Controller
+exynos-ohci exynos-ohci: new USB bus registered, assigned bus number 2
+exynos-ohci exynos-ohci: irq 103, io mem 0x12120000
+usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb2: Product: EXYNOS OHCI Host Controller
+usb usb2: Manufacturer: Linux 3.4.0-ARCH ohci_hcd
+usb usb2: SerialNumber: exynos-ohci
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 3 ports detected
+xhci-hcd xhci-hcd: xHCI Host Controller
+xhci-hcd xhci-hcd: new USB bus registered, assigned bus number 3
+xhci-hcd xhci-hcd: irq 104, io mem 0x12000000
+usb usb3: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb3: Product: xHCI Host Controller
+usb usb3: Manufacturer: Linux 3.4.0-ARCH xhci-hcd
+usb usb3: SerialNumber: xhci-hcd
+xHCI xhci_add_endpoint called for root hub
+xHCI xhci_check_bandwidth called for root hub
+hub 3-0:1.0: USB hub found
+hub 3-0:1.0: 1 port detected
+xhci-hcd xhci-hcd: xHCI Host Controller
+xhci-hcd xhci-hcd: new USB bus registered, assigned bus number 4
+usb usb4: New USB device found, idVendor=1d6b, idProduct=0003
+usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb4: Product: xHCI Host Controller
+usb usb4: Manufacturer: Linux 3.4.0-ARCH xhci-hcd
+usb usb4: SerialNumber: xhci-hcd
+xHCI xhci_add_endpoint called for root hub
+xHCI xhci_check_bandwidth called for root hub
+hub 4-0:1.0: USB hub found
+hub 4-0:1.0: 1 port detected
+usbcore: registered new interface driver cdc_acm
+cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+usbcore: registered new interface driver libusual
+usbcore: registered new interface driver usbserial
+usbcore: registered new interface driver usbserial_generic
+USB Serial support registered for generic
+usbserial: USB Serial Driver core
+input: chromeos-ec-i2c as /devices/s3c2440-i2c.4/i2c-4/4-001e/input/input0
+chromeos-ec-i2c 4-001e: MKBP Keyboard ready
+s5p-ehci s5p-ehci: s5p_hub_control:70 resetting HSIC port phys DONE
+cyapa 1-0067: Cypress APA Trackpad Information:
+    Product ID:  CYTRA-116002-00
+    Protocol Generation:  3
+    Firmware Version:  2.13
+    Hardware Version:  2.0
+    Max ABS X,Y:   1280,680
+    Physical Size X,Y:   98,55
+input: Cypress APA Trackpad (cyapa) as /devices/s3c2440-i2c.1/i2c-1/1-0067/input/input1
+rtc-max77686 max77686-rtc: rtc core: registered rtc-max77686 as rtc0
+cros_ec-i2c cros_ec-i2c.17: 4-001e: Chrome EC I2C pass-through adapter
+Attached IOMMU controller to mfc_r device.
+Attached IOMMU controller to mfc_l device.
+s5p-mfc s5p-mfc-v6: decoder registered as /dev/video10
+s5p-mfc s5p-mfc-v6: encoder registered as /dev/video11
+Attached IOMMU controller to exynos-gsc.0 device.
+[INFO]gsc_probe:1313: gsc-0 registered successfully
+Attached IOMMU controller to exynos-gsc.1 device.
+[INFO]gsc_probe:1313: gsc-1 registered successfully
+Attached IOMMU controller to exynos-gsc.2 device.
+[INFO]gsc_probe:1313: gsc-2 registered successfully
+Attached IOMMU controller to exynos-gsc.3 device.
+[INFO]gsc_probe:1313: gsc-3 registered successfully
+was registered successfully
+was registered successfully
+was registered successfully
+ntc-thermistor ncp15wb473.0: Thermistor ncp15wb473:0 (type: ncp15wb473/0) successfully probed.
+ntc-thermistor ncp15wb473.1: Thermistor ncp15wb473:1 (type: ncp15wb473/0) successfully probed.
+ntc-thermistor ncp15wb473.2: Thermistor ncp15wb473:2 (type: ncp15wb473/0) successfully probed.
+ntc-thermistor ncp15wb473.3: Thermistor ncp15wb473:3 (type: ncp15wb473/0) successfully probed.
+Exynos: Kernel Thermal management registered
+s3c2410_wdt: S3C2410 Watchdog Timer, (c) 2004 Simtec Electronics
+s3c2410-wdt 101d0000.watchdog: watchdog inactive, reset disabled, irq disabled
+device-mapper: uevent: version 1.0.3
+device-mapper: ioctl: 4.22.0-ioctl (2011-10-19) initialised: dm-devel@redhat.com
+device-mapper: verity-chromeos: dm-verity-chromeos registered
+device-mapper: bootcache: version 0.1.0 loaded
+cpuidle: using governor ladder
+cpuidle: using governor menu
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
+Synopsys Designware Multimedia Card Interface Driver
+dw_mmc dw_mmc.0: Using internal DMA controller.
+dw_mmc dw_mmc.0: Version ID is 241a
+dw_mmc dw_mmc.0: DW MMC controller at irq 107, 32 bit host data width, 128 deep fifo
+dw_mmc dw_mmc.0: wp gpio not available
+mmc0: no vmmc regulator found
+usb 1-2: new high-speed USB device number 2 using s5p-ehci
+s5p-ehci s5p-ehci: s5p_hub_control:70 resetting HSIC port phys DONE
+dw_mmc dw_mmc.2: Using internal DMA controller.
+dw_mmc dw_mmc.2: Version ID is 241a
+dw_mmc dw_mmc.2: DW MMC controller at irq 109, 32 bit host data width, 128 deep fifo
+mmc1: no vmmc regulator found
+dw_mmc dw_mmc.3: Using internal DMA controller.
+dw_mmc dw_mmc.3: Version ID is 241a
+dw_mmc dw_mmc.3: DW MMC controller at irq 110, 32 bit host data width, 128 deep fifo
+dw_mmc dw_mmc.3: wp gpio not available
+dw_mmc dw_mmc.3: cd gpio not available
+mmc2: no vmmc regulator found
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+mmc_host mmc0: Bus speed (slot 0) = 100000000Hz (slot req 784314Hz, actual 781250HZ div = 64)
+mmc_host mmc0: Bus speed (slot 0) = 100000000Hz (slot req 52000000Hz, actual 50000000HZ div = 1)
+mmc0: new high speed DDR MMC card at address 0001
+mmcblk0: mmc0:0001 SEM16G 14.6 GiB 
+mmcblk0boot0: mmc0:0001 SEM16G partition 1 2.00 MiB
+mmcblk0boot1: mmc0:0001 SEM16G partition 2 2.00 MiB
+max98095 7-0011: Hardware revision: C
+ mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12
+ mmcblk0boot1: unknown partition table
+ mmcblk0boot0: unknown partition table
+asoc: HiFi <-> samsung-i2s.0 mapping ok
+usb 1-2: New USB device found, idVendor=0424, idProduct=3503
+usb 1-2: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+asoc: HiFi <-> samsung-i2s.0 mapping ok
+hub 1-2:1.0: USB hub found
+hub 1-2:1.0: 3 ports detected
+input: DAISY-I2S HDMI Jack as /devices/sound.8/sound/card0/input2
+input: DAISY-I2S Headphone Jack as /devices/sound.8/sound/card0/input3
+input: DAISY-I2S Mic Jack as /devices/sound.8/sound/card0/input4
+Netfilter messages via NETLINK v0.30.
+nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+ip_tables: (C) 2000-2006 Netfilter Core Team
+arp_tables: (C) 2002 David S. Miller
+TCP: cubic registered
+mmc_host mmc1: Bus speed (slot 0) = 100000000Hz (slot req 784314Hz, actual 781250HZ div = 64)
+NET: Registered protocol family 10
+NET: Registered protocol family 17
+sctp: Hash tables configured (established 43690 bind 52428)
+VFP support v0.3: implementor 41 architecture 4 part 30 variant f rev 0
+ThumbEE CPU extension supported.
+Registering SWP/SWPB emulation handler
+s5p-mfc s5p-mfc-v6: start latency exceeded, new value 1000 ns
+s5p-mfc s5p-mfc-v6: state save latency exceeded, new value 1875 ns
+s5p-mfc s5p-mfc-v6: stop latency exceeded, new value 709 ns
+s5p-sysmmu s5p-sysmmu.4: start latency exceeded, new value 791 ns
+s5p-sysmmu s5p-sysmmu.4: state save latency exceeded, new value 4375 ns
+s5p-sysmmu s5p-sysmmu.4: stop latency exceeded, new value 542 ns
+VDD_INT Voltage table set with 7 Group
+VDD_MIF Voltage table set with 0 Group
+s5p-sysmmu s5p-sysmmu.3: start latency exceeded, new value 959 ns
+s5p-sysmmu s5p-sysmmu.3: state save latency exceeded, new value 4583 ns
+s5p-sysmmu s5p-sysmmu.3: stop latency exceeded, new value 625 ns
+registered taskstats version 1
+exynos-gsc exynos-gsc.3: start latency exceeded, new value 1583 ns
+exynos-gsc exynos-gsc.3: state save latency exceeded, new value 3209 ns
+exynos-gsc exynos-gsc.3: stop latency exceeded, new value 625 ns
+exynos-gsc exynos-gsc.2: start latency exceeded, new value 792 ns
+exynos-gsc exynos-gsc.2: state save latency exceeded, new value 3833 ns
+exynos-gsc exynos-gsc.2: stop latency exceeded, new value 667 ns
+exynos-gsc exynos-gsc.1: start latency exceeded, new value 792 ns
+exynos-gsc exynos-gsc.1: state save latency exceeded, new value 3000 ns
+exynos-gsc exynos-gsc.1: stop latency exceeded, new value 791 ns
+exynos-gsc exynos-gsc.0: start latency exceeded, new value 958 ns
+exynos-gsc exynos-gsc.0: state save latency exceeded, new value 2667 ns
+exynos-gsc exynos-gsc.0: stop latency exceeded, new value 625 ns
+s5p-sysmmu s5p-sysmmu.26: start latency exceeded, new value 875 ns
+s5p-sysmmu s5p-sysmmu.26: state save latency exceeded, new value 6666 ns
+s5p-sysmmu s5p-sysmmu.26: stop latency exceeded, new value 583 ns
+s5p-sysmmu s5p-sysmmu.25: start latency exceeded, new value 833 ns
+s5p-sysmmu s5p-sysmmu.25: state save latency exceeded, new value 6667 ns
+s5p-sysmmu s5p-sysmmu.25: stop latency exceeded, new value 625 ns
+s5p-sysmmu s5p-sysmmu.24: start latency exceeded, new value 833 ns
+s5p-sysmmu s5p-sysmmu.24: state save latency exceeded, new value 5667 ns
+s5p-sysmmu s5p-sysmmu.24: stop latency exceeded, new value 583 ns
+s5p-sysmmu s5p-sysmmu.23: start latency exceeded, new value 1083 ns
+s5p-sysmmu s5p-sysmmu.23: state save latency exceeded, new value 6875 ns
+s5p-sysmmu s5p-sysmmu.23: stop latency exceeded, new value 625 ns
+enp32khz: incomplete constraints, leaving on
+en32khz_cp: incomplete constraints, leaving on
+en32khz_ap: incomplete constraints, leaving on
+vdd_int: incomplete constraints, leaving on
+vdd_arm: incomplete constraints, leaving on
+gpio_set_debounce: gpio-165 status -22
+gpio_set_debounce: gpio-185 status -22
+input: gpio-keys.7 as /devices/gpio-keys.7/input/input5
+cyapa: LID device: 'gpio-keys.7' connected
+mmc_host mmc1: Bus speed (slot 0) = 100000000Hz (slot req 50000000Hz, actual 50000000HZ div = 1)
+mmc1: new high speed SDHC card at address aaaa
+mmcblk1: mmc1:aaaa SL16G 14.8 GiB 
+ mmcblk1: p1 p2 p3 p12
+rtc-max77686 max77686-rtc: setting system clock to 2014-09-20 15:52:31 UTC (1411228351)
+VDD_ARM : L0, 1200000 uV
+VDD_ARM : L1, 1162500 uV
+VDD_ARM : L2, 1112500 uV
+VDD_ARM : L3, 1075000 uV
+VDD_ARM : L4, 1050000 uV
+VDD_ARM : L5, 1012500 uV
+VDD_ARM : L6, 987500 uV
+VDD_ARM : L7, 962500 uV
+VDD_ARM : L8, 937500 uV
+VDD_ARM : L9, 925000 uV
+VDD_ARM : L10, 900000 uV
+VDD_ARM : L11, 900000 uV
+VDD_ARM : L12, 900000 uV
+VDD_ARM : L13, 900000 uV
+VDD_ARM : L14, 900000 uV
+VDD_ARM : L15, 900000 uV
+NOT Capping CPU0 frequency
+cpufreq_interactive: monitoring input on chromeos-ec-i2c
+cpufreq_interactive: monitoring input on Cypress APA Trackpad (cyapa)
+ALSA device list:
+  #0: DAISY-I2S
+EXT4-fs (mmcblk1p3): couldn't mount as ext3 due to feature incompatibilities
+mmc_host mmc2: Bus speed (slot 0) = 100000000Hz (slot req 784314Hz, actual 781250HZ div = 64)
+mmc_host mmc2: Bus speed (slot 0) = 100000000Hz (slot req 50000000Hz, actual 50000000HZ div = 1)
+mmc2: new high speed SDIO card at address 0001
+EXT4-fs (mmcblk1p3): couldn't mount as ext2 due to feature incompatibilities
+EXT4-fs (mmcblk1p3): mounted filesystem with ordered data mode. Opts: (null)
+VFS: Mounted root (ext4 filesystem) on device 179:51.
+devtmpfs: mounted
+Freeing init memory: 288K
+usb 1-2.2: new high-speed USB device number 3 using s5p-ehci
+usb 1-2.2: New USB device found, idVendor=2232, idProduct=1037
+usb 1-2.2: New USB device strings: Mfr=3, Product=1, SerialNumber=2
+usb 1-2.2: Product: WebCam SC-03FFM12339N
+usb 1-2.2: Manufacturer: Generic
+usb 1-2.2: SerialNumber: 200901010001
+systemd[1]: systemd 216 running in system mode. (+PAM -AUDIT -SELINUX -IMA -APPARMOR +SMACK -SYSVINIT +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 +SECCOMP +BLKID -ELFUTILS +KMOD -IDN )
+systemd[1]: Detected architecture 'arm'.
+systemd[1]: Inserted module 'autofs4'
+systemd[1]: Set hostname to <lyme>.
+systemd[1]: Cannot add dependency job for unit display-manager.service, ignoring: Unit display-manager.service failed to load: No such file or directory.
+systemd[1]: Starting Forward Password Requests to Wall Directory Watch.
+systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+systemd[1]: Expecting device sys-subsystem-net-devices-eth0.device...
+systemd[1]: Starting Remote File Systems.
+systemd[1]: Reached target Remote File Systems.
+systemd[1]: Starting Encrypted Volumes.
+systemd[1]: Reached target Encrypted Volumes.
+systemd[1]: Starting Dispatch Password Requests to Console Directory Watch.
+systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+systemd[1]: Starting Paths.
+systemd[1]: Reached target Paths.
+systemd[1]: Starting Arbitrary Executable File Formats File System Automount Point.
+systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+systemd[1]: Starting Swap.
+systemd[1]: Reached target Swap.
+systemd[1]: Starting Root Slice.
+systemd[1]: Created slice Root Slice.
+systemd[1]: Starting User and Session Slice.
+systemd[1]: Created slice User and Session Slice.
+systemd[1]: Starting /dev/initctl Compatibility Named Pipe.
+systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+systemd[1]: Starting Delayed Shutdown Socket.
+systemd[1]: Listening on Delayed Shutdown Socket.
+systemd[1]: Starting Device-mapper event daemon FIFOs.
+systemd[1]: Listening on Device-mapper event daemon FIFOs.
+systemd[1]: Starting Journal Socket (/dev/log).
+systemd[1]: Listening on Journal Socket (/dev/log).
+systemd[1]: Starting LVM2 metadata daemon socket.
+systemd[1]: Listening on LVM2 metadata daemon socket.
+systemd[1]: Starting udev Control Socket.
+systemd[1]: Listening on udev Control Socket.
+systemd[1]: Starting udev Kernel Socket.
+systemd[1]: Listening on udev Kernel Socket.
+systemd[1]: Starting Journal Socket.
+systemd[1]: Listening on Journal Socket.
+systemd[1]: Starting System Slice.
+systemd[1]: Created slice System Slice.
+systemd[1]: Mounting Temporary Directory...
+systemd[1]: Starting system-dhcpcd.slice.
+systemd[1]: Created slice system-dhcpcd.slice.
+systemd[1]: Starting system-getty.slice.
+systemd[1]: Created slice system-getty.slice.
+systemd[1]: Starting udev Coldplug all Devices...
+systemd[1]: Starting Create list of required static device nodes for the current kernel...
+systemd[1]: Mounting Debug File System...
+systemd[1]: Started Set Up Additional Binary Formats.
+systemd[1]: Mounted Huge Pages File System.
+systemd[1]: Mounting POSIX Message Queue File System...
+systemd[1]: Started Load Kernel Modules.
+systemd[1]: Mounted FUSE Control File System.
+systemd[1]: Mounted Configuration File System.
+systemd[1]: Starting Apply Kernel Variables...
+systemd[1]: Starting Setup Virtual Console...
+systemd[1]: Starting Journal Service...
+systemd[1]: Started Journal Service.
+systemd-udevd[134]: starting version 216
+s3c-rtc 101e0000.rtc: rtc disabled, re-enabling
+s3c-rtc 101e0000.rtc: rtc core: registered s3c as rtc1
+cfg80211: Calling CRDA to update world regulatory domain
+Bluetooth: Core ver 2.16
+NET: Registered protocol family 31
+Bluetooth: HCI device and connection manager initialized
+Bluetooth: HCI socket layer initialized
+Bluetooth: L2CAP socket layer initialized
+Bluetooth: SCO socket layer initialized
+Bluetooth: vendor=0x2df, device=0x912a, class=255, fn=2
+industrialio: module is from the staging directory, the quality is unknown, you have been warned.
+s5p-mfc s5p-mfc-v6: state restore latency exceeded, new value 1417 ns
+s5p-mfc s5p-mfc-v6: stop latency exceeded, new value 792 ns
+s5p-sysmmu s5p-sysmmu.4: state restore latency exceeded, new value 8084 ns
+s5p-sysmmu s5p-sysmmu.4: stop latency exceeded, new value 750 ns
+s5p-sysmmu s5p-sysmmu.4: start latency exceeded, new value 1000 ns
+s5p-sysmmu s5p-sysmmu.3: state restore latency exceeded, new value 6417 ns
+s5p-sysmmu s5p-sysmmu.3: stop latency exceeded, new value 834 ns
+isl29018: module is from the staging directory, the quality is unknown, you have been warned.
+sbs-battery 4-000b: sbs-battery: battery gas gauge device registered
+using legacy suspend method
+uvcvideo: Found UVC 1.00 device WebCam SC-03FFM12339N (2232:1037)
+input: WebCam SC-03FFM12339N as /devices/s5p-ehci/usb1/1-2/1-2.2/1-2.2:1.0/input/input6
+usbcore: registered new interface driver uvcvideo
+USB Video Class driver (1.1.1)
+EXT4-fs (mmcblk1p2): mounting ext2 file system using the ext4 subsystem
+Bluetooth: Downloading FW image (458108 bytes)
+EXT4-fs (mmcblk1p2): mounted filesystem without journal. Opts: (null)
+s5p-mfc s5p-mfc-v6: stop latency exceeded, new value 1208 ns
+s5p-sysmmu s5p-sysmmu.4: state restore latency exceeded, new value 8709 ns
+systemd-journald[125]: Received request to flush runtime journal from PID 1
+mwifiex_sdio mmc2:0001:1: Other intf already running! Skip FW download
+mwifiex_sdio mmc2:0001:1: WLAN FW is active
+mwifiex_sdio mmc2:0001:1: ignoring F/W country code US
+mwifiex_sdio mmc2:0001:1: driver_version = mwifiex 1.0 (14.66.11.p151) 
+netlink: 12 bytes leftover after parsing attributes.
+netlink: 12 bytes leftover after parsing attributes.
+netlink: 12 bytes leftover after parsing attributes.
+netlink: 12 bytes leftover after parsing attributes.
+netlink: 12 bytes leftover after parsing attributes.
+netlink: 12 bytes leftover after parsing attributes.

@@ -1,0 +1,1019 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 3.8.11-ARCH (jwf@lyme) (gcc version 4.8.2 20131219 (prerelease) (GCC) ) #8 SMP Fri Sep 19 12:42:46 EDT 2014
+[    0.000000] CPU: ARMv7 Processor [410fc0f4] revision 4 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, PIPT instruction cache
+[    0.000000] Machine: SAMSUNG EXYNOS5 (Flattened Device Tree), model: Google Snow
+[    0.000000] bootconsole [earlycon0] enabled
+[    0.000000] Ramoops: 41f00000 - 41ffffff
+[    0.000000] Memory policy: ECC disabled, Data cache writealloc
+[    0.000000] CPU EXYNOS5250 (id 0x43520010)
+[    0.000000] On node 0 totalpages: 519936
+[    0.000000]   Normal zone: 1520 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 188688 pages, LIFO batch:31
+[    0.000000]   HighMem zone: 2576 pages used for memmap
+[    0.000000]   HighMem zone: 327152 pages, LIFO batch:31
+[    0.000000] PERCPU: Embedded 9 pages/cpu @c0031000 s13824 r8192 d14848 u36864
+[    0.000000] pcpu-alloc: s13824 r8192 d14848 u36864 alloc=9*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 515840
+[    0.000000] Kernel command line: root=/dev/mmcblk1p3 rw rootwait console=tty1 earlyprintk debug
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] __ex_table already sorted, skipping sort
+[    0.000000] Memory: 31MB 16MB 216MB 1768MB = 2031MB total
+[    0.000000] Memory: 2048720k/2066128k available, 31024k reserved, 1317632K highmem
+[    0.000000] Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    vmalloc : 0xf0000000 - 0xff000000   ( 240 MB)
+    lowmem  : 0xc0000000 - 0xef800000   ( 760 MB)
+    pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+    modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+      .text : 0xc0008000 - 0xc0963008   (9581 kB)
+      .init : 0xc0a00000 - 0xc0a53600   ( 334 kB)
+      .data : 0xc0b00000 - 0xc0b92000   ( 584 kB)
+       .bss : 0xc0b92000 - 0xc0c26000   ( 592 kB)
+[    0.000000] SLUB: Genslabs=11, HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] NR_IRQS:693
+[    0.000000] Exynos5250: clock setup completed, armclk=1700000000
+[    0.000000] Exynos: Audss: clock setup completed
+[    0.000000] Architected local timer running at 24.00MHz (phys).
+[    0.000000] Switching to timer-based delay loop
+[    0.000000] sched_clock: ARM arch timer >56 bits at 24000kHz, resolution 41ns
+[    0.000000] Initial usec timer 31218854
+[    0.000000] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 178956ms
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] console [tty1] enabled, bootconsole disabled
+[    0.000000] allocated 4194304 bytes of page_cgroup
+[    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+[    0.018200] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=120000)
+[    0.018220] pid_max: default: 32768 minimum: 301
+[    0.018359] Mount-cache hash table entries: 512
+[    0.026426] Initializing cgroup subsys cpuacct
+[    0.026441] Initializing cgroup subsys memory
+[    0.026468] Initializing cgroup subsys devices
+[    0.026477] Initializing cgroup subsys freezer
+[    0.026488] Initializing cgroup subsys blkio
+[    0.026497] Initializing cgroup subsys perf_event
+[    0.026565] CPU: Testing write buffer coherency: ok
+[    0.026591] ftrace: allocating 23351 entries in 69 pages
+[    0.044790] /cpus/cpu@0 missing clock-frequency property
+[    0.044804] /cpus/cpu@1 missing clock-frequency property
+[    0.044830] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.044863] Setting up static identity map for 0x406ebd08 - 0x406ebd60
+[    0.045876] CPU1: Booted secondary processor
+[    0.045897] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.045943] Brought up 2 CPUs
+[    0.045961] SMP: Total of 2 processors activated (96.00 BogoMIPS).
+[    0.046395] devtmpfs: initialized
+[    0.053521] xor: measuring software checksum speed
+[   30.756855]    arm4regs  :  3011.200 MB/sec
+[   30.806096]    8regs     :  3004.800 MB/sec
+[   30.855338]    32regs    :  2832.000 MB/sec
+[   30.855346] xor: using function: arm4regs (3011.200 MB/sec)
+[   30.855359] pinctrl core: initialized pinctrl subsystem
+[   30.855581] regulator-dummy: no parameters
+[   30.855748] NET: Registered protocol family 16
+[   30.855883] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[   30.855894] Last reset was software reset (RST_STAT=0x20000000)
+[   30.856524] gpiochip_add: registered GPIOs 0 to 7 on device: gpa0
+[   30.856564] gpiochip_add: registered GPIOs 8 to 13 on device: gpa1
+[   30.856599] gpiochip_add: registered GPIOs 14 to 21 on device: gpa2
+[   30.856637] gpiochip_add: registered GPIOs 22 to 26 on device: gpb0
+[   30.856675] gpiochip_add: registered GPIOs 27 to 31 on device: gpb1
+[   30.856710] gpiochip_add: registered GPIOs 32 to 35 on device: gpb2
+[   30.856748] gpiochip_add: registered GPIOs 36 to 39 on device: gpb3
+[   30.856783] gpiochip_add: registered GPIOs 40 to 46 on device: gpc0
+[   30.856818] gpiochip_add: registered GPIOs 47 to 50 on device: gpc1
+[   30.856856] gpiochip_add: registered GPIOs 51 to 57 on device: gpc2
+[   30.856891] gpiochip_add: registered GPIOs 58 to 64 on device: gpc3
+[   30.856925] gpiochip_add: registered GPIOs 65 to 68 on device: gpd0
+[   30.856966] gpiochip_add: registered GPIOs 69 to 76 on device: gpd1
+[   30.857001] gpiochip_add: registered GPIOs 77 to 83 on device: gpc4
+[   30.857038] gpiochip_add: registered GPIOs 84 to 89 on device: gpy0
+[   30.857077] gpiochip_add: registered GPIOs 90 to 93 on device: gpy1
+[   30.857113] gpiochip_add: registered GPIOs 94 to 99 on device: gpy2
+[   30.857148] gpiochip_add: registered GPIOs 100 to 107 on device: gpy3
+[   30.857184] gpiochip_add: registered GPIOs 108 to 115 on device: gpy4
+[   30.857223] gpiochip_add: registered GPIOs 116 to 123 on device: gpy5
+[   30.857261] gpiochip_add: registered GPIOs 124 to 131 on device: gpy6
+[   30.857297] gpiochip_add: registered GPIOs 132 to 139 on device: gpx0
+[   30.857336] gpiochip_add: registered GPIOs 140 to 147 on device: gpx1
+[   30.857372] gpiochip_add: registered GPIOs 148 to 155 on device: gpx2
+[   30.857408] gpiochip_add: registered GPIOs 156 to 163 on device: gpx3
+[   30.858365] gpiochip_add: registered GPIOs 164 to 171 on device: gpe0
+[   30.858405] gpiochip_add: registered GPIOs 172 to 173 on device: gpe1
+[   30.858445] gpiochip_add: registered GPIOs 174 to 177 on device: gpf0
+[   30.858482] gpiochip_add: registered GPIOs 178 to 181 on device: gpf1
+[   30.858518] gpiochip_add: registered GPIOs 182 to 189 on device: gpg0
+[   30.858557] gpiochip_add: registered GPIOs 190 to 197 on device: gpg1
+[   30.858593] gpiochip_add: registered GPIOs 198 to 199 on device: gpg2
+[   30.858629] gpiochip_add: registered GPIOs 200 to 203 on device: gph0
+[   30.858668] gpiochip_add: registered GPIOs 204 to 211 on device: gph1
+[   30.858994] gpiochip_add: registered GPIOs 212 to 219 on device: gpv0
+[   30.859036] gpiochip_add: registered GPIOs 220 to 227 on device: gpv1
+[   30.859076] gpiochip_add: registered GPIOs 228 to 235 on device: gpv2
+[   30.859112] gpiochip_add: registered GPIOs 236 to 243 on device: gpv3
+[   30.859152] gpiochip_add: registered GPIOs 244 to 245 on device: gpv4
+[   30.859384] gpiochip_add: registered GPIOs 246 to 252 on device: gpz
+[   30.860511] syscon 10040000.syscon: syscon regmap start 0x10040000 end 0x10044fff registered
+[   30.866026] console [pstore-1] enabled
+[   30.866038] ramoops: attached 0x100000@0x41f00000, ecc: 0
+[   30.866469] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[   30.866484] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[   30.866497] S3C Power Management, Copyright 2004 Simtec Electronics
+[   30.870144] EXYNOS5250 PMU Initialize
+[   30.870156] EXYNOS: Initializing architecture
+[   30.870204] Switching to clocksource arch_sys_counter
+[   30.870307] ASV : Unknown SoC type
+[   30.873225] bio: create slab <bio-0> at 0
+[   30.874664] dma-pl330 121a0000.pdma: Loaded driver for PL330 DMAC-2364208
+[   30.874680] dma-pl330 121a0000.pdma: 	DBUFF-32x4bytes Num_Chans-8 Num_Peri-32 Num_Events-32
+[   30.876019] dma-pl330 121b0000.pdma: Loaded driver for PL330 DMAC-2364208
+[   30.876035] dma-pl330 121b0000.pdma: 	DBUFF-32x4bytes Num_Chans-8 Num_Peri-32 Num_Events-32
+[   30.876416] dma-pl330 11c10000.mdma: Loaded driver for PL330 DMAC-2364208
+[   30.876430] dma-pl330 11c10000.mdma: 	DBUFF-64x8bytes Num_Chans-8 Num_Peri-1 Num_Events-32
+[   30.876608] of_get_named_gpio_flags exited with status 134
+[   30.876675] wifi-rst-l: no parameters
+[   30.876768] of_get_named_gpio_flags exited with status 133
+[   30.876824] wifi-en: no parameters
+[   30.876853] wifi-en: supplied by wifi-rst-l
+[   30.876940] of_get_named_gpio_flags: can't parse gpios property
+[   30.876993] vbat-supply: no parameters
+[   30.877079] of_get_named_gpio_flags exited with status 164
+[   30.877138] wwan-en: no parameters
+[   30.877233] of_get_named_gpio_flags exited with status 147
+[   30.877289] codec-en: no parameters
+[   30.877780] SCSI subsystem initialized
+[   30.878235] of_get_named_gpio_flags exited with status 19
+[   30.878469] usbcore: registered new interface driver usbfs
+[   30.878504] usbcore: registered new interface driver hub
+[   30.878577] usbcore: registered new device driver usb
+[   30.878833] s3c-i2c 12c60000.i2c: slave address 0x00
+[   30.878848] s3c-i2c 12c60000.i2c: bus frequency set to 378 KHz
+[   30.879155] of_get_named_gpio_flags: can't parse gpios property
+[   30.879168] of_get_named_gpio_flags: can't parse gpios property
+[   30.879178] of_get_named_gpio_flags: can't parse gpios property
+[   30.879188] of_get_named_gpio_flags: can't parse gpios property
+[   30.879197] of_get_named_gpio_flags: can't parse gpios property
+[   30.879206] of_get_named_gpio_flags: can't parse gpios property
+[   30.879216] of_get_named_gpio_flags: can't parse gpios property
+[   30.879225] of_get_named_gpio_flags: can't parse gpios property
+[   30.879418] max77xxx 0-0009: device found
+[   30.879924] max77xxx-pmic max77686-pmic: No matching regulator for 'LDO4'
+[   30.879952] max77xxx-pmic max77686-pmic: No matching regulator for 'LDO5'
+[   30.879978] max77xxx-pmic max77686-pmic: No matching regulator for 'LDO6'
+[   30.880046] max77xxx-pmic max77686-pmic: No matching regulator for 'LDO9'
+[   30.880118] max77xxx-pmic max77686-pmic: No matching regulator for 'LDO11'
+[   30.880166] max77xxx-pmic max77686-pmic: No matching regulator for 'LDO13'
+[   30.880256] max77xxx-pmic max77686-pmic: No matching regulator for 'LDO17'
+[   30.880281] max77xxx-pmic max77686-pmic: No matching regulator for 'LDO18'
+[   30.880306] max77xxx-pmic max77686-pmic: No matching regulator for 'LDO19'
+[   30.880331] max77xxx-pmic max77686-pmic: No matching regulator for 'LDO20'
+[   30.880355] max77xxx-pmic max77686-pmic: No matching regulator for 'LDO21'
+[   30.880380] max77xxx-pmic max77686-pmic: No matching regulator for 'LDO22'
+[   30.880404] max77xxx-pmic max77686-pmic: No matching regulator for 'LDO23'
+[   30.880429] max77xxx-pmic max77686-pmic: No matching regulator for 'LDO24'
+[   30.880454] max77xxx-pmic max77686-pmic: No matching regulator for 'LDO25'
+[   30.880478] max77xxx-pmic max77686-pmic: No matching regulator for 'LDO26'
+[   30.880681] max77xxx-pmic max77686-pmic: No matching regulator for 'BUCK9'
+[   30.880713] max77xxx 0-0009: no regulator-op-mode property property at EN32KHZ_AP
+[   30.880745] max77xxx 0-0009: no regulator-op-mode property property at EN32KHZ_CP
+[   30.880777] max77xxx 0-0009: no regulator-op-mode property property at P32KHZ
+[   30.880978] P1.0V_LDO_OUT1: 1000 mV 
+[   30.881311] P1.8V_LDO_OUT2: 1800 mV 
+[   30.881631] P1.8V_LDO_OUT3: 1800 mV 
+[   30.881857] LDO4: at 2800 mV 
+[   30.882070] LDO5: at 1800 mV 
+[   30.882286] LDO6: at 1100 mV 
+[   30.882504] P1.1V_LDO_OUT7: 1100 mV 
+[   30.882722] P1.0V_LDO_OUT8: 1000 mV 
+[   30.882945] LDO9: at 1800 mV 
+[   30.883167] P1.8V_LDO_OUT10: 1800 mV 
+[   30.883385] LDO11: at 1800 mV 
+[   30.883606] P3.0V_LDO_OUT12: 3000 mV 
+[   30.883822] LDO13: at 1800 mV 
+[   30.884047] P1.8V_LDO_OUT14: 1800 mV 
+[   30.884271] P1.0V_LDO_OUT15: 1000 mV 
+[   30.884490] P1.8V_LDO_OUT16: 1800 mV 
+[   30.884709] LDO17: at 1200 mV 
+[   30.884936] LDO18: at 1800 mV 
+[   30.885179] LDO19: at 1800 mV 
+[   30.885388] LDO20: at 1800 mV 
+[   30.885600] LDO21: at 2800 mV 
+[   30.885809] LDO22: at 2800 mV 
+[   30.886020] LDO23: at 3000 mV 
+[   30.886240] LDO24: at 3000 mV 
+[   30.886449] LDO25: at 3000 mV 
+[   30.886663] LDO26: at 3000 mV 
+[   30.887108] vdd_mif: 950 <--> 1300 mV at 1000 mV 
+[   30.887459] vdd_arm: 850 <--> 1350 mV at 1300 mV 
+[   30.887816] vdd_int: 900 <--> 1200 mV at 1012 mV 
+[   30.888171] vdd_g3d: 850 <--> 1300 mV at 1200 mV 
+[   30.888517] P1.8V_BUCK_OUT5: 1800 mV 
+[   30.888870] P1.35V_BUCK_OUT6: 1350 mV 
+[   30.889219] P2.0V_BUCK_OUT7: 2000 mV 
+[   30.889580] P2.85V_BUCK_OUT8: 2850 mV 
+[   30.889793] BUCK9: at 1200 mV 
+[   30.890022] en32khz_ap: no parameters
+[   30.890094] en32khz_cp: no parameters
+[   30.890163] p32khz: no parameters
+[   30.890260] s3c-i2c 12c60000.i2c: i2c-0: S3C I2C adapter
+[   30.890378] s3c-i2c 12c70000.i2c: slave address 0x00
+[   30.890393] s3c-i2c 12c70000.i2c: bus frequency set to 378 KHz
+[   30.890961] s3c-i2c 12c70000.i2c: i2c-1: S3C I2C adapter
+[   30.891050] s3c-i2c 12c80000.i2c: slave address 0x00
+[   30.891064] s3c-i2c 12c80000.i2c: bus frequency set to 65 KHz
+[   30.891423] s3c-i2c 12c80000.i2c: i2c-2: S3C I2C adapter
+[   30.891503] s3c-i2c 12c90000.i2c: slave address 0x00
+[   30.891517] s3c-i2c 12c90000.i2c: bus frequency set to 65 KHz
+[   30.891728] s3c-i2c 12c90000.i2c: i2c-3: S3C I2C adapter
+[   30.891804] s3c-i2c 12ca0000.i2c: slave address 0x00
+[   30.891818] s3c-i2c 12ca0000.i2c: bus frequency set to 65 KHz
+[   30.891880] s3c-i2c 12ca0000.i2c: i2c-4: S3C I2C adapter
+[   30.891956] s3c-i2c 12cb0000.i2c: slave address 0x00
+[   30.891969] s3c-i2c 12cb0000.i2c: bus frequency set to 65 KHz
+[   30.892030] s3c-i2c 12cb0000.i2c: i2c-5: S3C I2C adapter
+[   30.892105] s3c-i2c 12cd0000.i2c: slave address 0x00
+[   30.892119] s3c-i2c 12cd0000.i2c: bus frequency set to 65 KHz
+[   30.892615] s3c-i2c 12cd0000.i2c: i2c-7: S3C I2C adapter
+[   30.892684] s3c-i2c 12ce0000.i2c: slave address 0x00
+[   30.892698] s3c-i2c 12ce0000.i2c: bus frequency set to 378 KHz
+[   30.892906] s3c-i2c 12ce0000.i2c: i2c-8: S3C I2C adapter
+[   30.893223] of_get_named_gpio_flags exited with status 177
+[   30.893246] of_get_named_gpio_flags exited with status 168
+[   30.893263] of_get_named_gpio_flags: can't parse gpios property
+[   30.893335] i2c i2c-4: Added multiplexed i2c bus 104
+[   30.893709] cros-ec-i2c 104-001e: Chrome EC device registered
+[   30.894060] of_get_named_gpio_flags: can't parse gpios property
+[   30.894073] of_get_named_gpio_flags: can't parse gpios property
+[   30.894084] of_get_named_gpio_flags: can't parse gpios property
+[   30.894143] TPS65090_RAILSDCDC1: no parameters
+[   30.894175] TPS65090_RAILSDCDC1: supplied by vbat-supply
+[   30.894936] TPS65090_RAILSDCDC2: no parameters
+[   30.894963] TPS65090_RAILSDCDC2: supplied by vbat-supply
+[   30.895712] TPS65090_RAILSDCDC3: no parameters
+[   30.895739] TPS65090_RAILSDCDC3: supplied by vbat-supply
+[   30.896484] vcd_led: no parameters
+[   30.896510] vcd_led: supplied by vbat-supply
+[   30.899201] video_mid: no parameters
+[   30.899228] video_mid: supplied by vbat-supply
+[   30.901921] wwan_r: no parameters
+[   30.901950] wwan_r: supplied by vbat-supply
+[   30.902697] sdcard: no parameters
+[   30.902723] sdcard: supplied by vbat-supply
+[   30.905416] camout: no parameters
+[   30.905443] camout: supplied by vbat-supply
+[   30.906188] lcd_vdd: no parameters
+[   30.906214] lcd_vdd: supplied by vbat-supply
+[   30.908905] video_mid_1a: no parameters
+[   30.908933] video_mid_1a: supplied by vbat-supply
+[   30.909693] TPS65090_RAILSLDO1: no parameters
+[   30.909719] TPS65090_RAILSLDO1: supplied by vbat-supply
+[   30.909803] TPS65090_RAILSLDO2: no parameters
+[   30.909827] TPS65090_RAILSLDO2: supplied by vbat-supply
+[   30.910136] media: Linux media interface: v0.10
+[   30.910167] Linux video capture interface: v2.00
+[   30.912204] Advanced Linux Sound Architecture Driver Initialized.
+[   30.912544] EXYNOS5250: Adaptive Support Voltage init
+[   30.912564] EXYNOS5250: ASV lock int: 0 g3d: 0 arm: 0
+[   30.912574] EXYNOS5250: ORIG: 7 MOD: 0 RESULT: 7
+[   30.912583] EXYNOS5250 MIF: RESULT: 0
+[   30.927326] NET: Registered protocol family 2
+[   30.927646] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+[   30.927740] TCP bind hash table entries: 8192 (order: 5, 163840 bytes)
+[   30.927853] TCP: Hash tables configured (established 8192 bind 8192)
+[   30.927893] TCP: reno registered
+[   30.927909] UDP hash table entries: 512 (order: 2, 24576 bytes)
+[   30.927937] UDP-Lite hash table entries: 512 (order: 2, 24576 bytes)
+[   30.928097] NET: Registered protocol family 1
+[   30.928372] hw perfevents: enabled with ARMv7 Cortex-A15 PMU driver, 7 counters available
+[   30.930072] bounce pool size: 64 pages
+[   30.932799] VFS: Disk quotas dquot_6.5.2
+[   30.932956] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[   30.933752] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[   30.934098] fuse init (API version 7.20)
+[   30.934987] Btrfs loaded
+[   30.935009] msgmni has been set to 1427
+[   30.936031] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+[   30.936093] io scheduler noop registered
+[   30.936104] io scheduler deadline registered
+[   30.936129] io scheduler cfq registered (default)
+[   30.948147] of_get_named_gpio_flags exited with status 156
+[   30.972325] 12c00000.serial: ttySAC0 at MMIO 0x12c00000 (irq = 83) is a S3C6400/10
+[   30.996238] 12c10000.serial: ttySAC1 at MMIO 0x12c10000 (irq = 84) is a S3C6400/10
+[   31.020157] 12c20000.serial: ttySAC2 at MMIO 0x12c20000 (irq = 85) is a S3C6400/10
+[   31.041140] 12c30000.serial: ttySAC3 at MMIO 0x12c30000 (irq = 86) is a S3C6400/10
+[   31.041712] tpm_i2c_infineon 3-0020: registering reboot notifier [gentle shutdown]
+[   31.045075] tpm_i2c_infineon 3-0020: 1.2 TPM (device-id 0xD115)
+[   31.122247] [drm] Initialized drm 1.1.0 20060810
+[   31.122479] of_get_named_gpio_flags: can't parse gpios property
+[   31.122493] of_get_named_gpio_flags: can't parse gpios property
+[   31.122504] of_get_named_gpio_flags: can't parse gpios property
+[   31.123135] [drm] FIMD: using MIE dithering
+[   31.123380] of_get_named_gpio_flags exited with status 163
+[   31.124823] exynos-mixer 14450000.mixer: probe start
+[   31.125879] of_get_named_gpio_flags exited with status 99
+[   31.125903] of_get_named_gpio_flags exited with status 145
+[   31.126259] [drm] Supports vblank timestamp caching Rev 1 (10.10.2010).
+[   31.126271] [drm] No driver support for vblank timestamp query.
+[   31.220861] exynos-dp 145b0000.display-port-controller: EDID data does not include any extensions.
+[   31.225995] exynos-dp 145b0000.display-port-controller: EDID Read success!
+[   31.229211] exynos-dp 145b0000.display-port-controller: Link Training Clock Recovery success
+[   31.231057] exynos-dp 145b0000.display-port-controller: Link Training success!
+[   31.288979] Console: switching to colour frame buffer device 170x48
+[   31.294244] exynos-drm exynos-drm: fb0:  frame buffer device
+[   31.294295] exynos-drm exynos-drm: registered panic notifier
+[   31.294376] [drm] Initialized exynos 1.0.0 20110530 on minor 0
+[   31.294626] v4 support
+[   31.294950] mali 11800000.mali: GPU identified as 0x6956 r0p0 status 1
+[   31.295236] mali 11800000.mali: Probed as mali0
+[   31.297576] loop: module loaded
+[   31.297629] lkdtm: No crash points registered, enable through debugfs
+[   31.327883] cros-ec-i2c 104-001e: bad packet checksum
+[   31.328619] of_get_named_gpio_flags exited with status 155
+[   31.328962] dwc3 12000000.dwc3: no usb3 phy configured
+[   31.329024] platform 12000000.dwc3: Driver dwc3 requests probe deferral
+[   31.329250] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[   31.329401] of_get_named_gpio_flags exited with status 141
+[   31.331165] unable to find transceiver of type USB2 PHY
+[   31.332930] s5p-ehci 12110000.usb: no platform data or transceiver defined
+[   31.334714] platform 12110000.usb: Driver s5p-ehci requests probe deferral
+[   31.336606] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[   31.338505] unable to find transceiver of type USB2 PHY
+[   31.340311] exynos-ohci 12120000.usb: no platform data or transceiver defined
+[   31.342155] platform 12120000.usb: Driver exynos-ohci requests probe deferral
+[   31.344140] usbcore: registered new interface driver cdc_acm
+[   31.345937] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[   31.347759] Initializing USB Mass Storage driver...
+[   31.349574] usbcore: registered new interface driver usb-storage
+[   31.351361] USB Mass Storage support registered.
+[   31.353205] usbcore: registered new interface driver usbserial
+[   31.355030] usbcore: registered new interface driver usbserial_generic
+[   31.356806] usbserial: USB Serial support registered for generic
+[   31.358741] samsung-usb2phy 12130000.usbphy: Not a multi controller PHY
+[   31.360480] of_get_named_gpio_flags exited with status 172
+[   31.362212] samsung-usb2phy 12130000.usbphy: No HS Tx Pre-Emp current control
+[   31.363944] of_get_named_gpio_flags: can't parse gpios property
+[   31.365663] samsung-usb2phy 12130000.usbphy: Can't get usb-phy clock gpio
+[   31.367700] samsung-usb3phy 12100000.usbphy: Not a multi controller PHY
+[   31.369495] samsung-usb3phy 12100000.usbphy: Can't get usb-phy sysreg cfg register
+[   31.371269] of_get_named_gpio_flags: can't parse gpios property
+[   31.373066] samsung-usb3phy 12100000.usbphy: No HS Tx Pre-Emp current control
+[   31.374869] of_get_named_gpio_flags exited with status 91
+[   31.376978] input: cros-ec-i2c as /devices/12ca0000.i2c/i2c-4/i2c-104/104-001e/cros-ec-keyb.3/input/input0
+[   31.380271] max77xxx-rtc max77686-rtc: max77xxx_rtc_probe
+[   31.466710] input: Cypress APA Trackpad (cyapa) as /devices/12c70000.i2c/i2c-1/1-0067/input/input1
+[   31.545056] max77xxx-rtc max77686-rtc: rtc core: registered max77xxx-rtc as rtc0
+[   31.548496] s5p-mfc 11000000.codec: decoder registered as /dev/video10
+[   31.550492] s5p-mfc 11000000.codec: encoder registered as /dev/video11
+[   31.559454] Exynos: Kernel Thermal management registered
+[   31.561759] s3c2410-wdt 101d0000.watchdog: watchdog inactive, reset disabled, irq disabled
+[   31.563876] cpuidle: using governor ladder
+[   31.565897] cpuidle: using governor menu
+[   31.567866] sdhci: Secure Digital Host Controller Interface driver
+[   31.569815] sdhci: Copyright(c) Pierre Ossman
+[   31.571730] Synopsys Designware Multimedia Card Interface Driver
+[   31.574118] dwmmc_exynos 12200000.dwmmc0: no vmmc regulator found: -19
+[   31.576116] dwmmc_exynos 12200000.dwmmc0: Using internal DMA controller.
+[   31.578064] dwmmc_exynos 12200000.dwmmc0: Version ID is 241a
+[   31.580091] dwmmc_exynos 12200000.dwmmc0: DW MMC controller at irq 107, 32 bit host data width, 128 deep fifo
+[   31.582062] of_get_named_gpio_flags: can't parse gpios property
+[   31.613210] dwmmc_exynos 12200000.dwmmc0: 1 slots initialized
+[   31.615374] dwmmc_exynos 12220000.dwmmc2: no vmmc regulator found: -19
+[   31.618107] dwmmc_exynos 12220000.dwmmc2: Using internal DMA controller.
+[   31.620047] dwmmc_exynos 12220000.dwmmc2: Version ID is 241a
+[   31.622051] dwmmc_exynos 12220000.dwmmc2: DW MMC controller at irq 109, 32 bit host data width, 128 deep fifo
+[   31.624053] of_get_named_gpio_flags exited with status 52
+[   31.652557] dwmmc_exynos 12220000.dwmmc2: 1 slots initialized
+[   31.654726] dwmmc_exynos 12230000.dwmmc3: Using internal DMA controller.
+[   31.656665] dwmmc_exynos 12230000.dwmmc3: Version ID is 241a
+[   31.658670] dwmmc_exynos 12230000.dwmmc3: DW MMC controller at irq 110, 32 bit host data width, 128 deep fifo
+[   31.660639] of_get_named_gpio_flags: can't parse gpios property
+[   31.685875] mmc0: BKOPS_EN bit is not set
+[   31.690224] mmc_host mmc0: Bus speed (slot 0) = 50000000Hz (slot req 52000000Hz, actual 50000000HZ div = 0)
+[   31.691929] dwmmc_exynos 12230000.dwmmc3: 1 slots initialized
+[   31.692161] ledtrig-cpu: registered to indicate activity on CPUs
+[   31.692369] usbcore: registered new interface driver usbhid
+[   31.692371] usbhid: USB HID core driver
+[   31.701459] mmc_host mmc0: Bus speed (slot 0) = 100000000Hz (slot req 52000000Hz, actual 50000000HZ div = 1)
+[   31.703945] mmc0: new high speed DDR MMC card at address 0001
+[   31.706360] mmcblk0: mmc0:0001 SEM16G 14.6 GiB 
+[   31.708547] mmcblk0boot0: mmc0:0001 SEM16G partition 1 2.00 MiB
+[   31.710752] mmcblk0boot1: mmc0:0001 SEM16G partition 2 2.00 MiB
+[   31.712936] mmcblk0rpmb: mmc0:0001 SEM16G partition 3 128 KiB
+[   31.718348]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12
+[   31.723151]  mmcblk0boot1: unknown partition table
+[   31.726566]  mmcblk0boot0: unknown partition table
+[   31.786668] max98095 7-0011: Hardware revision: C
+[   31.795704] of_get_named_gpio_flags exited with status 148
+[   31.797603] of_get_named_gpio_flags exited with status 150
+[   31.799480] mmc_host mmc1: Bus speed (slot 0) = 50000000Hz (slot req 50000000Hz, actual 50000000HZ div = 0)
+[   31.801435] mmc1: new high speed SDHC card at address aaaa
+[   31.803903] daisy-snd-max98095 sound.8:  HiFi <-> 3830000.i2s mapping ok
+[   31.805799] mmcblk1: mmc1:aaaa SL16G 14.8 GiB 
+[   31.808334] daisy-snd-max98095 sound.8:  HiFi <-> 3830000.i2s mapping ok
+[   31.810855] input: DAISY-I2S HDMI Jack as /devices/sound.8/sound/card0/input2
+[   31.812923] input: DAISY-I2S Headphone Jack as /devices/sound.8/sound/card0/input3
+[   31.814997] input: DAISY-I2S Mic Jack as /devices/sound.8/sound/card0/input4
+[   31.818077] Netfilter messages via NETLINK v0.30.
+[   31.820066] TCP: cubic registered
+[   31.822165] NET: Registered protocol family 10
+[   31.824086]  mmcblk1: p1 p2 p3 p12
+[   31.824376] NET: Registered protocol family 17
+[   31.824405] Key type dns_resolver registered
+[   31.829457] VFP support v0.3: implementor 41 architecture 4 part 30 variant f rev 0
+[   31.831367] ThumbEE CPU extension supported.
+[   31.833307] Registering SWP/SWPB emulation handler
+[   31.837406] registered taskstats version 1
+[   31.840107] LDO5: disabling
+[   31.861377] mmc_host mmc2: Bus speed (slot 0) = 50000000Hz (slot req 50000000Hz, actual 50000000HZ div = 0)
+[   31.868230] mmc2: new high speed SDIO card at address 0001
+[   32.058932] xhci-hcd xhci-hcd.2.auto: xHCI Host Controller
+[   32.060898] xhci-hcd xhci-hcd.2.auto: new USB bus registered, assigned bus number 1
+[   32.062877] xhci-hcd xhci-hcd.2.auto: irq 104, io mem 0x12000000
+[   32.064737] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[   32.066573] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   32.068402] usb usb1: Product: xHCI Host Controller
+[   32.070225] usb usb1: Manufacturer: Linux 3.8.11-ARCH xhci-hcd
+[   32.072052] usb usb1: SerialNumber: xhci-hcd.2.auto
+[   32.074016] xHCI xhci_add_endpoint called for root hub
+[   32.075805] xHCI xhci_check_bandwidth called for root hub
+[   32.077619] hub 1-0:1.0: USB hub found
+[   32.079333] hub 1-0:1.0: 1 port detected
+[   32.081146] xhci-hcd xhci-hcd.2.auto: xHCI Host Controller
+[   32.082932] xhci-hcd xhci-hcd.2.auto: new USB bus registered, assigned bus number 2
+[   32.084693] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003
+[   32.086395] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   32.088060] usb usb2: Product: xHCI Host Controller
+[   32.089708] usb usb2: Manufacturer: Linux 3.8.11-ARCH xhci-hcd
+[   32.091372] usb usb2: SerialNumber: xhci-hcd.2.auto
+[   32.093206] xHCI xhci_add_endpoint called for root hub
+[   32.094880] xHCI xhci_check_bandwidth called for root hub
+[   32.096630] hub 2-0:1.0: USB hub found
+[   32.098295] hub 2-0:1.0: 1 port detected
+[   32.100203] of_get_named_gpio_flags exited with status 141
+[   32.101905] gpio_request: gpio-141 (ehci_vbus_gpio) status -16
+[   32.103593] s5p-ehci 12110000.usb: can't request ehci vbus gpio 141
+[   32.115104] s5p-ehci 12110000.usb: S5P EHCI Host Controller
+[   32.116878] s5p-ehci 12110000.usb: new USB bus registered, assigned bus number 3
+[   32.118596] s5p-ehci 12110000.usb: irq 103, io mem 0x12110000
+[   32.129775] s5p-ehci 12110000.usb: USB 2.0 started, EHCI 1.00
+[   32.131441] usb usb3: New USB device found, idVendor=1d6b, idProduct=0002
+[   32.133072] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   32.134701] usb usb3: Product: S5P EHCI Host Controller
+[   32.136310] usb usb3: Manufacturer: Linux 3.8.11-ARCH ehci_hcd
+[   32.137913] usb usb3: SerialNumber: 12110000.usb
+[   32.139742] hub 3-0:1.0: USB hub found
+[   32.141326] hub 3-0:1.0: 3 ports detected
+[   32.143121] samsung-usb2phy 12130000.usbphy: USB PHY already initialized
+[   32.144737] exynos-ohci 12120000.usb: EXYNOS OHCI Host Controller
+[   32.146443] exynos-ohci 12120000.usb: new USB bus registered, assigned bus number 4
+[   32.148089] exynos-ohci 12120000.usb: irq 103, io mem 0x12120000
+[   32.207555] usb usb4: New USB device found, idVendor=1d6b, idProduct=0001
+[   32.209179] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   32.210794] usb usb4: Product: EXYNOS OHCI Host Controller
+[   32.212406] usb usb4: Manufacturer: Linux 3.8.11-ARCH ohci_hcd
+[   32.214038] usb usb4: SerialNumber: 12120000.usb
+[   32.215855] hub 4-0:1.0: USB hub found
+[   32.217411] hub 4-0:1.0: 3 ports detected
+[   32.219311] of_get_named_gpio_flags exited with status 143
+[   32.220864] of_get_named_gpio_flags exited with status 161
+[   32.222389] gpio_set_debounce: gpio-143 status -22
+[   32.223983] gpio_set_debounce: gpio-161 status -22
+[   32.225585] input: gpio-keys.7 as /devices/gpio-keys.7/input/input5
+[   32.227171] cyapa: LID device: 'gpio-keys.7' connected
+[   32.260908] max77xxx-rtc max77686-rtc: setting system clock to 2014-09-20 15:50:08 UTC (1411228208)
+[   32.262488] VDD_ARM : L0, 1200000 uV
+[   32.264044] VDD_ARM : L1, 1162500 uV
+[   32.265569] VDD_ARM : L2, 1112500 uV
+[   32.267070] VDD_ARM : L3, 1075000 uV
+[   32.268569] VDD_ARM : L4, 1050000 uV
+[   32.270038] VDD_ARM : L5, 1012500 uV
+[   32.271481] VDD_ARM : L6, 987500 uV
+[   32.272899] VDD_ARM : L7, 962500 uV
+[   32.274285] VDD_ARM : L8, 937500 uV
+[   32.275642] VDD_ARM : L9, 925000 uV
+[   32.276973] VDD_ARM : L10, 900000 uV
+[   32.278301] VDD_ARM : L11, 900000 uV
+[   32.279598] VDD_ARM : L12, 900000 uV
+[   32.280880] VDD_ARM : L13, 900000 uV
+[   32.282130] VDD_ARM : L14, 900000 uV
+[   32.283377] VDD_ARM : L15, 900000 uV
+[   32.284671] NOT Capping CPU0 frequency
+[   32.285955] cpufreq_interactive: monitoring input on cros-ec-i2c
+[   32.287204] cpufreq_interactive: monitoring input on Cypress APA Trackpad (cyapa)
+[   32.295690] VDD_INT Voltage table set with 7 Group
+[   32.297310] ALSA device list:
+[   32.298521]   #0: DAISY-I2S
+[   32.301758] EXT4-fs (mmcblk1p3): couldn't mount as ext3 due to feature incompatibilities
+[   32.303478] EXT4-fs (mmcblk1p3): couldn't mount as ext2 due to feature incompatibilities
+[   32.320825] EXT4-fs (mmcblk1p3): mounted filesystem with ordered data mode. Opts: (null)
+[   32.322111] VFS: Mounted root (ext4 filesystem) on device 179:67.
+[   32.325356] devtmpfs: mounted
+[   32.326795] Freeing init memory: 332K
+[   32.444749] usb 3-2: new high-speed USB device number 2 using s5p-ehci
+[   32.573700] usb 3-2: New USB device found, idVendor=0424, idProduct=3503
+[   32.584199] usb 3-2: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[   32.595448] hub 3-2:1.0: USB hub found
+[   32.597653] hub 3-2:1.0: 3 ports detected
+[   32.670020] systemd[1]: Mounting cgroup to /sys/fs/cgroup/cpuset of type cgroup with options cpuset.
+[   32.706806] systemd[1]: Mounting cgroup to /sys/fs/cgroup/cpu,cpuacct of type cgroup with options cpu,cpuacct.
+[   32.769614] systemd[1]: Mounting cgroup to /sys/fs/cgroup/memory of type cgroup with options memory.
+[   32.794303] systemd[1]: Mounting cgroup to /sys/fs/cgroup/devices of type cgroup with options devices.
+[   32.819984] systemd[1]: Mounting cgroup to /sys/fs/cgroup/freezer of type cgroup with options freezer.
+[   32.864025] systemd[1]: Mounting cgroup to /sys/fs/cgroup/blkio of type cgroup with options blkio.
+[   32.878031] usb 3-2.2: new high-speed USB device number 3 using s5p-ehci
+[   32.917541] systemd[1]: Mounting cgroup to /sys/fs/cgroup/perf_event of type cgroup with options perf_event.
+[   32.971641] systemd[1]: systemd 216 running in system mode. (+PAM -AUDIT -SELINUX -IMA -APPARMOR +SMACK -SYSVINIT +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 +SECCOMP +BLKID -ELFUTILS +KMOD -IDN )
+[   32.984081] systemd[1]: Detected architecture 'arm'.
+[   33.004863] systemd[1]: Set hostname to <lyme>.
+[   33.031360] systemd[1]: Using cgroup controller name=systemd. File system hierarchy is at /sys/fs/cgroup/systemd.
+[   33.034148] systemd[1]: Installed release agent.
+[   33.037021] systemd[1]: Set up TFD_TIMER_CANCEL_ON_SET timerfd.
+[   33.052639] usb 3-2.2: New USB device found, idVendor=2232, idProduct=1037
+[   33.055260] usb 3-2.2: New USB device strings: Mfr=3, Product=1, SerialNumber=2
+[   33.057886] usb 3-2.2: Product: WebCam SC-03FFM12339N
+[   33.060518] usb 3-2.2: Manufacturer: Generic
+[   33.063144] usb 3-2.2: SerialNumber: 200901010001
+[   33.068404] systemd[111]: Spawned /usr/lib/systemd/system-generators/systemd-getty-generator as 112.
+[   33.071808] systemd[111]: Spawned /usr/lib/systemd/system-generators/systemd-system-update-generator as 113.
+[   33.075383] systemd[111]: Spawned /usr/lib/systemd/system-generators/systemd-fstab-generator as 114.
+[   33.078598] systemd[111]: Spawned /usr/lib/systemd/system-generators/systemd-cryptsetup-generator as 115.
+[   33.081890] systemd[111]: Spawned /usr/lib/systemd/system-generators/systemd-efi-boot-generator as 116.
+[   33.082398] systemd[111]: Spawned /usr/lib/systemd/system-generators/systemd-debug-generator as 117.
+[   33.082887] systemd[111]: Spawned /usr/lib/systemd/system-generators/systemd-gpt-auto-generator as 118.
+[   33.083380] systemd[111]: Spawned /usr/lib/systemd/system-generators/lvm2-activation-generator as 119.
+[   33.094660] systemd[111]: /usr/lib/systemd/system-generators/systemd-getty-generator succeeded.
+[   33.096510] systemd[111]: /usr/lib/systemd/system-generators/systemd-system-update-generator succeeded.
+[   33.104202] systemd-fstab-generator[114]: Parsing /etc/fstab
+[   33.107767] systemd-efi-boot-generator[116]: Not an EFI boot, exiting.
+[   33.117045] systemd-fstab-generator[114]: Found entry what=/dev/mmcblk1p2 where=/boot type=ext2
+[   33.143021] systemd-fstab-generator[114]: Found entry what=/dev/sda2 where=/mnt/scratch type=ext4
+[   33.149670] systemd[111]: /usr/lib/systemd/system-generators/systemd-fstab-generator succeeded.
+[   33.151601] systemd[111]: /usr/lib/systemd/system-generators/systemd-cryptsetup-generator succeeded.
+[   33.153512] systemd[111]: /usr/lib/systemd/system-generators/systemd-efi-boot-generator succeeded.
+[   33.155687] systemd[111]: /usr/lib/systemd/system-generators/systemd-debug-generator succeeded.
+[   33.175176] systemd-gpt-auto-generator[118]: Root device /dev/mmcblk1.
+[   33.293857] systemd[111]: /usr/lib/systemd/system-generators/systemd-gpt-auto-generator succeeded.
+[   33.298099] systemd[111]: /usr/lib/systemd/system-generators/lvm2-activation-generator succeeded.
+[   33.301951] systemd[1]: /usr/lib/systemd/system-generators succeeded.
+[   33.313250] systemd[1]: Looking for unit files in (higher priority first):
+[   33.316766] systemd[1]: 	/etc/systemd/system
+[   33.320344] systemd[1]: 	/run/systemd/system
+[   33.323396] systemd[1]: 	/run/systemd/generator
+[   33.326357] systemd[1]: 	/usr/local/lib/systemd/system
+[   33.329286] systemd[1]: 	/usr/lib/systemd/system
+[   33.332204] systemd[1]: SysV init scripts and rcN.d links support disabled
+[   33.393268] systemd[1]: Failed to load configuration for auditd.service: No such file or directory
+[   33.402741] systemd[1]: Failed to load configuration for plymouth-start.service: No such file or directory
+[   33.414554] systemd[1]: Failed to load configuration for syslog.service: No such file or directory
+[   33.430166] systemd[1]: Failed to load configuration for display-manager.service: No such file or directory
+[   33.452750] systemd[1]: Failed to load configuration for plymouth-quit-wait.service: No such file or directory
+[   33.468805] systemd[1]: Failed to load configuration for network.service: No such file or directory
+[   33.490626] systemd[1]: Using notification socket /run/systemd/notify
+[   33.493932] systemd[1]: Successfully created private D-Bus server.
+[   33.497019] systemd[1]: -.mount changed dead -> mounted
+[   33.500322] systemd[1]: Activating default unit: default.target
+[   33.503436] systemd[1]: Trying to enqueue job graphical.target/start/isolate
+[   33.507770] systemd[1]: Cannot add dependency job for unit display-manager.service, ignoring: Unit display-manager.service failed to load: No such file or directory.
+[   33.512058] systemd[1]: Installed new job graphical.target/start as 1
+[   33.515434] systemd[1]: Installed new job multi-user.target/start as 2
+[   33.518842] systemd[1]: Installed new job basic.target/start as 3
+[   33.520593] systemd[1]: Installed new job sysinit.target/start as 4
+[   33.522371] systemd[1]: Installed new job local-fs.target/start as 5
+[   33.524093] systemd[1]: Installed new job boot.mount/start as 6
+[   33.525808] systemd[1]: Installed new job dev-mmcblk1p2.device/start as 7
+[   33.527532] systemd[1]: Installed new job systemd-fsck@dev-mmcblk1p2.service/start as 8
+[   33.529240] systemd[1]: Installed new job system-systemd\x2dfsck.slice/start as 9
+[   33.530954] systemd[1]: Installed new job system.slice/start as 10
+[   33.532666] systemd[1]: Installed new job -.slice/start as 11
+[   33.534358] systemd[1]: Installed new job tmp.mount/start as 14
+[   33.536050] systemd[1]: Installed new job systemd-remount-fs.service/start as 15
+[   33.537767] systemd[1]: Installed new job local-fs-pre.target/start as 16
+[   33.539474] systemd[1]: Installed new job swap.target/start as 17
+[   33.541152] systemd[1]: Installed new job systemd-update-done.service/start as 18
+[   33.542852] systemd[1]: Installed new job systemd-udev-hwdb-update.service/start as 19
+[   33.544514] systemd[1]: Installed new job proc-sys-fs-binfmt_misc.automount/start as 20
+[   33.546175] systemd[1]: Installed new job systemd-sysusers.service/start as 21
+[   33.547819] systemd[1]: Installed new job sys-fs-fuse-connections.mount/start as 22
+[   33.549465] systemd[1]: Installed new job systemd-udev-trigger.service/start as 23
+[   33.551081] systemd[1]: Installed new job systemd-udevd.service/start as 24
+[   33.552699] systemd[1]: Installed new job systemd-udevd-control.socket/start as 25
+[   33.554312] systemd[1]: Installed new job systemd-udevd-kernel.socket/start as 26
+[   33.555920] systemd[1]: Installed new job ldconfig.service/start as 27
+[   33.557511] systemd[1]: Installed new job systemd-ask-password-console.path/start as 28
+[   33.559081] systemd[1]: Installed new job kmod-static-nodes.service/start as 29
+[   33.560650] systemd[1]: Installed new job sys-kernel-debug.mount/start as 30
+[   33.562203] systemd[1]: Installed new job systemd-firstboot.service/start as 31
+[   33.563741] systemd[1]: Installed new job sys-kernel-config.mount/start as 32
+[   33.565265] systemd[1]: Installed new job systemd-binfmt.service/start as 33
+[   33.566811] systemd[1]: Installed new job systemd-update-utmp.service/start as 34
+[   33.568368] systemd[1]: Installed new job dev-hugepages.mount/start as 35
+[   33.569926] systemd[1]: Installed new job dev-mqueue.mount/start as 36
+[   33.571492] systemd[1]: Installed new job systemd-random-seed.service/start as 37
+[   33.573051] systemd[1]: Installed new job systemd-journal-catalog-update.service/start as 38
+[   33.574599] systemd[1]: Installed new job systemd-modules-load.service/start as 39
+[   33.576133] systemd[1]: Installed new job systemd-tmpfiles-setup-dev.service/start as 40
+[   33.577680] systemd[1]: Installed new job lvm2-lvmetad.socket/start as 41
+[   33.579204] systemd[1]: Installed new job systemd-sysctl.service/start as 42
+[   33.580714] systemd[1]: Installed new job cryptsetup.target/start as 43
+[   33.582229] systemd[1]: Installed new job systemd-journal-flush.service/start as 44
+[   33.583716] systemd[1]: Installed new job systemd-journald.service/start as 45
+[   33.585187] systemd[1]: Installed new job systemd-journald.socket/start as 46
+[   33.586654] systemd[1]: Installed new job systemd-journald-dev-log.socket/start as 47
+[   33.588108] systemd[1]: Installed new job systemd-vconsole-setup.service/start as 48
+[   33.589548] systemd[1]: Installed new job systemd-tmpfiles-setup.service/start as 49
+[   33.590914] systemd[1]: Installed new job sockets.target/start as 52
+[   33.592221] systemd[1]: Installed new job systemd-initctl.socket/start as 53
+[   33.593527] systemd[1]: Installed new job systemd-shutdownd.socket/start as 54
+[   33.594833] systemd[1]: Installed new job dm-event.socket/start as 55
+[   33.596149] systemd[1]: Installed new job dbus.socket/start as 56
+[   33.597454] systemd[1]: Installed new job timers.target/start as 57
+[   33.598759] systemd[1]: Installed new job systemd-tmpfiles-clean.timer/start as 58
+[   33.600081] systemd[1]: Installed new job paths.target/start as 59
+[   33.601397] systemd[1]: Installed new job slices.target/start as 60
+[   33.602703] systemd[1]: Installed new job alsa-restore.service/start as 61
+[   33.604007] systemd[1]: Installed new job alsa-state.service/start as 62
+[   33.605310] systemd[1]: Installed new job systemd-resolved.service/start as 63
+[   33.606640] systemd[1]: Installed new job sshd.service/start as 64
+[   33.607949] systemd[1]: Installed new job sshdgenkeys.service/start as 65
+[   33.609254] systemd[1]: Installed new job systemd-networkd.service/start as 66
+[   33.610567] systemd[1]: Installed new job network.target/start as 67
+[   33.611879] systemd[1]: Installed new job remote-fs.target/start as 68
+[   33.613183] systemd[1]: Installed new job haveged.service/start as 69
+[   33.614473] systemd[1]: Installed new job dhcpcd@eth0.service/start as 70
+[   33.615768] systemd[1]: Installed new job sys-subsystem-net-devices-eth0.device/start as 71
+[   33.617076] systemd[1]: Installed new job system-dhcpcd.slice/start as 72
+[   33.618372] systemd[1]: Installed new job shadow.timer/start as 73
+[   33.619664] systemd[1]: Installed new job dbus.service/start as 74
+[   33.620962] systemd[1]: Installed new job getty.target/start as 75
+[   33.622241] systemd[1]: Installed new job getty@tty1.service/start as 76
+[   33.623517] systemd[1]: Installed new job system-getty.slice/start as 77
+[   33.624778] systemd[1]: Installed new job systemd-user-sessions.service/start as 78
+[   33.626048] systemd[1]: Installed new job systemd-ask-password-wall.path/start as 79
+[   33.627303] systemd[1]: Installed new job logrotate.timer/start as 80
+[   33.628557] systemd[1]: Installed new job man-db.timer/start as 81
+[   33.629806] systemd[1]: Installed new job systemd-logind.service/start as 82
+[   33.631072] systemd[1]: Installed new job user.slice/start as 83
+[   33.632332] systemd[1]: Enqueued job graphical.target/start as 1
+[   33.633585] systemd[1]: Loaded units and determined initial transaction in 590.986ms.
+[   33.635511] systemd[1]: Received SIGCHLD from PID 111 (n/a).
+[   33.636861] systemd[1]: Starting Forward Password Requests to Wall Directory Watch.
+[   33.638332] systemd[1]: systemd-ask-password-wall.path changed dead -> waiting
+[   33.639649] systemd[1]: Job systemd-ask-password-wall.path/start finished, result=done
+[   33.641007] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[   33.642368] systemd[1]: Expecting device sys-subsystem-net-devices-eth0.device...
+[   33.645367] systemd[1]: Starting Remote File Systems.
+[   33.646729] systemd[1]: remote-fs.target changed dead -> active
+[   33.648105] systemd[1]: Job remote-fs.target/start finished, result=done
+[   33.651186] systemd[1]: Reached target Remote File Systems.
+[   33.652645] systemd[1]: Starting Encrypted Volumes.
+[   33.654083] systemd[1]: cryptsetup.target changed dead -> active
+[   33.655548] systemd[1]: Job cryptsetup.target/start finished, result=done
+[   33.658739] systemd[1]: Reached target Encrypted Volumes.
+[   33.660290] systemd[1]: ConditionPathExists=!/run/plymouth/pid succeeded for systemd-ask-password-console.path.
+[   33.661855] systemd[1]: Starting Dispatch Password Requests to Console Directory Watch.
+[   33.663546] systemd[1]: systemd-ask-password-console.path changed dead -> waiting
+[   33.665153] systemd[1]: Job systemd-ask-password-console.path/start finished, result=done
+[   33.666765] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[   33.668413] systemd[1]: Starting Paths.
+[   33.670038] systemd[1]: paths.target changed dead -> active
+[   33.671669] systemd[1]: Job paths.target/start finished, result=done
+[   33.675228] systemd[1]: Reached target Paths.
+[   33.676924] systemd[1]: ConditionPathIsReadWrite=/proc/sys/ succeeded for proc-sys-fs-binfmt_misc.automount.
+[   33.678672] systemd[1]: ConditionPathExists=/proc/sys/fs/binfmt_misc/ succeeded for proc-sys-fs-binfmt_misc.automount.
+[   33.680449] systemd[1]: Starting Arbitrary Executable File Formats File System Automount Point.
+[   33.682276] systemd[1]: Autofs kernel version 1.0
+[   33.684217] systemd[1]: Autofs protocol version 5.2
+[   33.686018] systemd[1]: proc-sys-fs-binfmt_misc.automount changed dead -> waiting
+[   33.687818] systemd[1]: Job proc-sys-fs-binfmt_misc.automount/start finished, result=done
+[   33.691761] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[   33.693695] systemd[1]: Starting Swap.
+[   33.695603] systemd[1]: swap.target changed dead -> active
+[   33.697522] systemd[1]: Job swap.target/start finished, result=done
+[   33.701675] systemd[1]: Reached target Swap.
+[   33.703647] systemd[1]: Starting Root Slice.
+[   33.727992] systemd[1]: -.slice changed dead -> active
+[   33.729976] systemd[1]: Job -.slice/start finished, result=done
+[   33.734180] systemd[1]: Created slice Root Slice.
+[   33.736173] systemd[1]: Starting User and Session Slice.
+[   33.738787] systemd[1]: user.slice changed dead -> active
+[   33.740729] systemd[1]: Job user.slice/start finished, result=done
+[   33.745232] systemd[1]: Created slice User and Session Slice.
+[   33.747188] systemd[1]: Starting /dev/initctl Compatibility Named Pipe.
+[   33.749239] systemd[1]: systemd-initctl.socket changed dead -> listening
+[   33.751170] systemd[1]: Job systemd-initctl.socket/start finished, result=done
+[   33.755275] systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+[   33.757241] systemd[1]: Starting Delayed Shutdown Socket.
+[   33.759253] systemd[1]: systemd-shutdownd.socket changed dead -> listening
+[   33.761190] systemd[1]: Job systemd-shutdownd.socket/start finished, result=done
+[   33.765342] systemd[1]: Listening on Delayed Shutdown Socket.
+[   33.767326] systemd[1]: Starting Device-mapper event daemon FIFOs.
+[   33.769364] systemd[1]: dm-event.socket changed dead -> listening
+[   33.771310] systemd[1]: Job dm-event.socket/start finished, result=done
+[   33.775437] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[   33.777377] systemd[1]: Starting Journal Socket (/dev/log).
+[   33.779361] systemd[1]: systemd-journald-dev-log.socket changed dead -> listening
+[   33.781271] systemd[1]: Job systemd-journald-dev-log.socket/start finished, result=done
+[   33.785357] systemd[1]: Listening on Journal Socket (/dev/log).
+[   33.787310] systemd[1]: Starting LVM2 metadata daemon socket.
+[   33.789301] systemd[1]: lvm2-lvmetad.socket changed dead -> listening
+[   33.791222] systemd[1]: Job lvm2-lvmetad.socket/start finished, result=done
+[   33.795324] systemd[1]: Listening on LVM2 metadata daemon socket.
+[   33.797263] systemd[1]: ConditionPathIsReadWrite=/sys succeeded for systemd-udevd-control.socket.
+[   33.799189] systemd[1]: Starting udev Control Socket.
+[   33.801129] systemd[1]: systemd-udevd-control.socket changed dead -> listening
+[   33.803064] systemd[1]: Job systemd-udevd-control.socket/start finished, result=done
+[   33.807155] systemd[1]: Listening on udev Control Socket.
+[   33.809094] systemd[1]: ConditionPathIsReadWrite=/sys succeeded for systemd-udevd-kernel.socket.
+[   33.811008] systemd[1]: Starting udev Kernel Socket.
+[   33.812934] systemd[1]: systemd-udevd-kernel.socket changed dead -> listening
+[   33.814834] systemd[1]: Job systemd-udevd-kernel.socket/start finished, result=done
+[   33.818910] systemd[1]: Listening on udev Kernel Socket.
+[   33.820852] systemd[1]: Starting Journal Socket.
+[   33.822859] systemd[1]: systemd-journald.socket changed dead -> listening
+[   33.824800] systemd[1]: Job systemd-journald.socket/start finished, result=done
+[   33.828953] systemd[1]: Listening on Journal Socket.
+[   33.830958] systemd[1]: Starting System Slice.
+[   33.833560] systemd[1]: system.slice changed dead -> active
+[   33.835517] systemd[1]: Job system.slice/start finished, result=done
+[   33.839692] systemd[1]: Created slice System Slice.
+[   33.843588] systemd[1]: ConditionPathIsSymbolicLink=!/tmp succeeded for tmp.mount.
+[   33.845568] systemd[1]: Mounting Temporary Directory...
+[   33.851535] systemd[1]: About to execute: /bin/mount -n tmpfs /tmp -t tmpfs -o mode=1777,strictatime
+[   33.853876] systemd[1]: Forked /bin/mount as 120
+[   33.876483] systemd[1]: tmp.mount changed dead -> mounting
+[   33.878556] systemd[1]: Starting system-dhcpcd.slice.
+[   33.881335] systemd[1]: system-dhcpcd.slice changed dead -> active
+[   33.883296] systemd[1]: Job system-dhcpcd.slice/start finished, result=done
+[   33.887533] systemd[1]: Created slice system-dhcpcd.slice.
+[   33.889566] systemd[1]: Starting system-getty.slice.
+[   33.892244] systemd[1]: system-getty.slice changed dead -> active
+[   33.894199] systemd[1]: Job system-getty.slice/start finished, result=done
+[   33.898413] systemd[1]: Created slice system-getty.slice.
+[   33.900423] systemd[1]: ConditionPathIsReadWrite=/sys succeeded for systemd-udev-trigger.service.
+[   33.902414] systemd[1]: Starting udev Coldplug all Devices...
+[   33.907477] systemd[1]: About to execute: /usr/bin/udevadm trigger --type=subsystems --action=add
+[   33.909783] systemd[1]: Forked /usr/bin/udevadm as 121
+[   33.960317] systemd[1]: systemd-udev-trigger.service changed dead -> start
+[   34.013395] systemd[1]: ConditionPathExists=/lib/modules/3.8.11-ARCH/modules.devname succeeded for kmod-static-nodes.service.
+[   34.015695] systemd[1]: ConditionCapability=CAP_SYS_MODULE succeeded for kmod-static-nodes.service.
+[   34.017764] systemd[1]: Starting Create list of required static device nodes for the current kernel...
+[   34.025410] systemd[1]: About to execute: /usr/bin/kmod static-nodes --format=tmpfiles --output=/run/tmpfiles.d/kmod.conf
+[   34.028739] systemd[1]: Forked /usr/bin/kmod as 123
+[   34.058690] systemd[1]: kmod-static-nodes.service changed dead -> start
+[   34.061006] systemd[1]: ConditionCapability=CAP_SYS_RAWIO succeeded for sys-kernel-debug.mount.
+[   34.063162] systemd[1]: ConditionPathExists=/sys/kernel/debug succeeded for sys-kernel-debug.mount.
+[   34.066661] systemd[1]: Mounting Debug File System...
+[   34.072163] systemd[1]: About to execute: /bin/mount -n debugfs /sys/kernel/debug -t debugfs
+[   34.074729] systemd[1]: Forked /bin/mount as 126
+[   34.093007] systemd[1]: sys-kernel-debug.mount changed dead -> mounting
+[   34.095266] systemd[1]: ConditionDirectoryNotEmpty=|/run/binfmt.d failed for systemd-binfmt.service.
+[   34.098564] systemd[1]: ConditionDirectoryNotEmpty=|/etc/binfmt.d failed for systemd-binfmt.service.
+[   34.100880] systemd[1]: ConditionDirectoryNotEmpty=|/usr/local/lib/binfmt.d failed for systemd-binfmt.service.
+[   34.103629] systemd[1]: ConditionDirectoryNotEmpty=|/usr/lib/binfmt.d failed for systemd-binfmt.service.
+[   34.105790] systemd[1]: ConditionDirectoryNotEmpty=|/lib/binfmt.d failed for systemd-binfmt.service.
+[   34.107927] systemd[1]: ConditionPathIsReadWrite=/proc/sys/ succeeded for systemd-binfmt.service.
+[   34.110050] systemd[1]: Starting of systemd-binfmt.service requested but condition failed. Ignoring.
+[   34.112200] systemd[1]: Job systemd-binfmt.service/start finished, result=done
+[   34.114392] systemd[1]: Started Set Up Additional Binary Formats.
+[   34.116591] systemd[1]: ConditionPathExists=/sys/kernel/mm/hugepages failed for dev-hugepages.mount.
+[   34.118784] systemd[1]: Starting of dev-hugepages.mount requested but condition failed. Ignoring.
+[   34.120975] systemd[1]: Job dev-hugepages.mount/start finished, result=done
+[   34.123177] systemd[1]: Mounted Huge Pages File System.
+[   34.125390] systemd[1]: ConditionPathExists=/proc/sys/fs/mqueue succeeded for dev-mqueue.mount.
+[   34.127620] systemd[1]: Mounting POSIX Message Queue File System...
+[   34.133059] systemd[1]: About to execute: /bin/mount -n mqueue /dev/mqueue -t mqueue
+[   34.135571] systemd[1]: Forked /bin/mount as 129
+[   34.161859] systemd[1]: dev-mqueue.mount changed dead -> mounting
+[   34.164332] systemd[1]: ConditionKernelCommandLine=|rd.modules-load failed for systemd-modules-load.service.
+[   34.166798] systemd[1]: ConditionKernelCommandLine=|modules-load failed for systemd-modules-load.service.
+[   34.169070] systemd[1]: ConditionDirectoryNotEmpty=|/run/modules-load.d failed for systemd-modules-load.service.
+[   34.172214] systemd[1]: ConditionDirectoryNotEmpty=|/etc/modules-load.d failed for systemd-modules-load.service.
+[   34.174474] systemd[1]: ConditionDirectoryNotEmpty=|/usr/local/lib/modules-load.d failed for systemd-modules-load.service.
+[   34.178692] systemd[1]: ConditionDirectoryNotEmpty=|/usr/lib/modules-load.d failed for systemd-modules-load.service.
+[   34.180980] systemd[1]: ConditionDirectoryNotEmpty=|/lib/modules-load.d failed for systemd-modules-load.service.
+[   34.183394] systemd[1]: ConditionCapability=CAP_SYS_MODULE succeeded for systemd-modules-load.service.
+[   34.185658] systemd[1]: Starting of systemd-modules-load.service requested but condition failed. Ignoring.
+[   34.187942] systemd[1]: Job systemd-modules-load.service/start finished, result=done
+[   34.190211] systemd[1]: Started Load Kernel Modules.
+[   34.192521] systemd[1]: ConditionPathExists=/sys/fs/fuse/connections succeeded for sys-fs-fuse-connections.mount.
+[   34.194805] systemd[1]: Mounting FUSE Control File System...
+[   34.200404] systemd[1]: About to execute: /bin/mount -n fusectl /sys/fs/fuse/connections -t fusectl
+[   34.203001] systemd[1]: Forked /bin/mount as 131
+[   34.220898] systemd[1]: sys-fs-fuse-connections.mount changed dead -> mounting
+[   34.223447] systemd[1]: ConditionCapability=CAP_SYS_RAWIO succeeded for sys-kernel-config.mount.
+[   34.225866] systemd[1]: ConditionPathExists=/sys/kernel/config failed for sys-kernel-config.mount.
+[   34.228159] systemd[1]: Starting of sys-kernel-config.mount requested but condition failed. Ignoring.
+[   34.230350] systemd[1]: Job sys-kernel-config.mount/start finished, result=done
+[   34.232565] systemd[1]: Mounted Configuration File System.
+[   34.234788] systemd[1]: ConditionPathIsReadWrite=/proc/sys/ succeeded for systemd-sysctl.service.
+[   34.237015] systemd[1]: Starting Apply Kernel Variables...
+[   34.242422] systemd[1]: About to execute: /usr/lib/systemd/systemd-sysctl
+[   34.244894] systemd[1]: Forked /usr/lib/systemd/systemd-sysctl as 133
+[   34.265319] systemd[1]: systemd-sysctl.service changed dead -> start
+[   34.267641] systemd[1]: ConditionPathExists=/dev/tty0 succeeded for systemd-vconsole-setup.service.
+[   34.269944] systemd[1]: Starting Setup Virtual Console...
+[   34.275761] systemd[1]: About to execute: /usr/lib/systemd/systemd-vconsole-setup
+[   34.278393] systemd[1]: Forked /usr/lib/systemd/systemd-vconsole-setup as 134
+[   34.299779] systemd[1]: systemd-vconsole-setup.service changed dead -> start
+[   34.302127] systemd[1]: Starting Journal Service...
+[   34.307587] systemd[1]: About to execute: /usr/lib/systemd/systemd-journald
+[   34.310112] systemd[1]: Forked /usr/lib/systemd/systemd-journald as 135
+[   34.344378] systemd[1]: systemd-journald.service changed dead -> running
+[   34.348401] systemd[1]: Job systemd-journald.service/start finished, result=done
+[   34.356822] systemd[1]: Started Journal Service.
+[   34.360830] systemd[1]: systemd-journald.socket changed listening -> running
+[   34.373310] systemd[1]: systemd-journald-dev-log.socket changed listening -> running
+[   34.392974] systemd[1]: slices.target changed dead -> active
+[   34.402821] systemd[1]: Job slices.target/start finished, result=done
+[   34.422508] systemd[1]: ConditionPathExists=/etc/fstab succeeded for systemd-remount-fs.service.
+[   34.476844] systemd[1]: systemd-remount-fs.service changed dead -> start
+[   34.511082] systemd[1]: system-systemd\x2dfsck.slice changed dead -> active
+[   34.520906] systemd[1]: Job system-systemd\x2dfsck.slice/start finished, result=done
+[   34.560285] systemd[1]: dev-mqueue.mount changed mounting -> mounting-done
+[   34.570134] systemd[1]: Job dev-mqueue.mount/start finished, result=done
+[   34.594777] systemd[1]: sys-kernel-debug.mount changed mounting -> mounting-done
+[   34.609539] systemd[1]: Job sys-kernel-debug.mount/start finished, result=done
+[   34.638990] systemd[1]: sys-fs-fuse-connections.mount changed mounting -> mounting-done
+[   34.648840] systemd[1]: Job sys-fs-fuse-connections.mount/start finished, result=done
+[   34.673444] systemd[1]: tmp.mount changed mounting -> mounting-done
+[   34.683266] systemd[1]: Job tmp.mount/start finished, result=done
+[   34.707879] systemd[1]: Received SIGCHLD from PID 120 (mount).
+[   34.717721] systemd[1]: Child 120 (mount) died (code=exited, status=0/SUCCESS)
+[   34.727560] systemd[1]: Child 120 belongs to tmp.mount
+[   34.742357] systemd[1]: tmp.mount mount process exited, code=exited status=0
+[   34.757079] systemd[1]: tmp.mount changed mounting-done -> mounted
+[   34.766944] systemd[1]: Child 121 (udevadm) died (code=exited, status=0/SUCCESS)
+[   34.776766] systemd[1]: Child 121 belongs to systemd-udev-trigger.service
+[   34.796431] systemd[1]: systemd-udev-trigger.service running next main command for state start
+[   34.840725] systemd[1]: Child 123 (kmod) died (code=exited, status=0/SUCCESS)
+[   34.850626] systemd[1]: Child 123 belongs to kmod-static-nodes.service
+[   34.909622] systemd[1]: kmod-static-nodes.service changed start -> exited
+[   34.919473] systemd[1]: Job kmod-static-nodes.service/start finished, result=done
+[   34.948967] systemd[1]: kmod-static-nodes.service: cgroup is empty
+[   34.958824] systemd[1]: Child 126 (mount) died (code=exited, status=0/SUCCESS)
+[   34.968645] systemd[1]: Child 126 belongs to sys-kernel-debug.mount
+[   34.978486] systemd[1]: sys-kernel-debug.mount mount process exited, code=exited status=0
+[   34.988336] systemd[1]: sys-kernel-debug.mount changed mounting-done -> mounted
+[   34.998166] systemd[1]: Child 129 (mount) died (code=exited, status=0/SUCCESS)
+[   35.008020] systemd[1]: Child 129 belongs to dev-mqueue.mount
+[   35.017842] systemd[1]: dev-mqueue.mount mount process exited, code=exited status=0
+[   35.027700] systemd[1]: dev-mqueue.mount changed mounting-done -> mounted
+[   35.042464] systemd[1]: Child 131 (mount) died (code=exited, status=0/SUCCESS)
+[   35.057216] systemd[1]: Child 131 belongs to sys-fs-fuse-connections.mount
+[   35.067066] systemd[1]: sys-fs-fuse-connections.mount mount process exited, code=exited status=0
+[   35.076883] systemd[1]: sys-fs-fuse-connections.mount changed mounting-done -> mounted
+[   35.101562] systemd[1]: Accepted new private connection.
+[   35.111334] systemd[1]: Incoming traffic on systemd-udevd-kernel.socket
+[   35.121173] systemd[1]: systemd-udevd-kernel.socket changed listening -> running
+[   35.140940] systemd[1]: Accepted new private connection.
+[   35.160522] systemd[1]: Accepted new private connection.
+[   35.180198] systemd[1]: Accepted new private connection.
+[   35.190038] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/unit/systemd_2dudevd_2dkernel_2esocket interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=1 reply_cookie=0 error=n/a
+[   35.204795] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/unit/systemd_2dudevd_2dkernel_2esocket interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=2 reply_cookie=0 error=n/a
+[   35.224470] systemd[1]: Accepted new private connection.
+[   35.234311] systemd[1]: Got message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/agent interface=org.freedesktop.systemd1.Agent member=Released cookie=1 reply_cookie=0 error=n/a
+[   35.249069] systemd[1]: Got message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/agent interface=org.freedesktop.systemd1.Agent member=Released cookie=1 reply_cookie=0 error=n/a
+[   35.268747] systemd[1]: Accepted new private connection.
+[   35.278597] systemd[1]: Got message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/agent interface=org.freedesktop.systemd1.Agent member=Released cookie=1 reply_cookie=0 error=n/a
+[   35.293347] systemd[1]: Got message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/agent interface=org.freedesktop.systemd1.Agent member=Released cookie=1 reply_cookie=0 error=n/a
+[   35.308117] systemd[1]: Got message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/agent interface=org.freedesktop.systemd1.Agent member=Released cookie=1 reply_cookie=0 error=n/a
+[   35.322875] systemd[1]: Got message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/agent interface=org.freedesktop.systemd1.Agent member=Released cookie=1 reply_cookie=0 error=n/a
+[   44.125182] systemd-sysctl[133]: Setting 'kernel/core_uses_pid' to '1'
+[   44.164121] systemd[1]: Received SIGCHLD from PID 134 (systemd-vconsol).
+[   44.173940] systemd[1]: Child 134 (systemd-vconsol) died (code=exited, status=0/SUCCESS)
+[   44.183786] systemd[1]: Child 134 belongs to systemd-vconsole-setup.service
+[   44.223165] systemd[1]: systemd-vconsole-setup.service changed start -> exited
+[   44.233120] systemd[1]: Job systemd-vconsole-setup.service/start finished, result=done
+[   44.249247] systemd-journald[135]: Fixed max_use=100.0M max_size=12.5M min_size=4.0M keep_free=150.0M
+[   44.256183] systemd-journald[135]: Reserving 22769 entries in hash table.
+[   44.261683] systemd-journald[135]: Vacuuming...
+[   44.265557] systemd-journald[135]: Vacuuming done, freed 0 bytes
+[   44.270102] systemd-journald[135]: Flushing /dev/kmsg...
+[   44.277285] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobRemoved cookie=3 reply_cookie=0 error=n/a
+[   44.279609] systemd-journald[135]: Compressed data object 537 -> 288 using XZ
+[   44.292035] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobRemoved cookie=1 reply_cookie=0 error=n/a
+[   44.306788] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobRemoved cookie=1 reply_cookie=0 error=n/a
+[   44.321595] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobRemoved cookie=1 reply_cookie=0 error=n/a
+[   44.336310] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobRemoved cookie=1 reply_cookie=0 error=n/a
+[   44.351077] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobRemoved cookie=1 reply_cookie=0 error=n/a
+[   44.365820] systemd[1]: systemd-vconsole-setup.service: cgroup is empty
+[   44.375658] systemd[1]: Child 136 (systemd-remount) died (code=exited, status=0/SUCCESS)
+[   44.385510] systemd[1]: Child 136 belongs to systemd-remount-fs.service
+[   44.434700] systemd[1]: systemd-remount-fs.service changed start -> exited
+[   44.435883] systemd-journald[135]: systemd-journald running as pid 135
+[   44.851843] systemd-udevd[147]: starting version 216
+[   45.080358] s3c-rtc 101e0000.rtc: rtc disabled, re-enabling
+[   45.083672] s3c-rtc 101e0000.rtc: rtc core: registered s3c as rtc1
+[   45.272800] uvcvideo: Found UVC 1.00 device WebCam SC-03FFM12339N (2232:1037)
+[   45.282885] input: WebCam SC-03FFM12339N as /devices/12110000.usb/usb3/3-2/3-2.2/3-2.2:1.0/input/input6
+[   45.286036] usbcore: registered new interface driver uvcvideo
+[   45.288754] USB Video Class driver (1.1.1)
+[   45.307154] systemd[1]: dev-disk-by\x2did-mmc\x2dSEM16G_0x209495b6\x2dpart2.device changed dead -> plugged
+[   45.364691] systemd[1]: sys-devices-12200000.dwmmc0-mmc_host-mmc0-mmc0:0001-block-mmcblk0-mmcblk0p4.device changed dead -> plugged
+[   45.379542] isl29018: module is from the staging directory, the quality is unknown, you have been warned.
+[   45.395494] Bluetooth: Core ver 2.19
+[   45.398276] NET: Registered protocol family 31
+[   45.401027] Bluetooth: HCI device and connection manager initialized
+[   45.401339] mousedev: PS/2 mouse device common for all mice
+[   45.406616] systemd[1]: dev-disk-by\x2dlabel-OEM.device changed dead -> plugged
+[   45.409460] Bluetooth: HCI socket layer initialized
+[   45.413118] cfg80211: Calling CRDA to update world regulatory domain
+[   45.422145] Bluetooth: L2CAP socket layer initialized
+[   45.424938] Bluetooth: SCO socket layer initialized
+[   45.441483] sbs-battery 104-000b: sbs-battery: battery gas gauge device registered
+[   45.444437] i2c-core: driver [sbs-battery] using legacy suspend method
+[   45.494844] Bluetooth: vendor=0x2df, device=0x912a, class=255, fn=2
+[   45.676627] EXT4-fs (mmcblk1p2): mounting ext2 file system using the ext4 subsystem
+[   45.685283] EXT4-fs (mmcblk1p2): mounted filesystem without journal. Opts: (null)
+[   45.861539] systemd[1]: Accepted new private connection.
+[   45.899527] systemd-journald[135]: Received request to flush runtime journal from PID 1
+[   45.906277] systemd-journald[135]: Fixed max_use=1.4G max_size=128.0M min_size=4.0M keep_free=2.1G
+[   45.940229] systemd[1]: Failed to send job remove signal for 44: Transport endpoint is not connected
+[   45.950252] systemd-journald[135]: Flushing to /var...
+[   45.952550] systemd-journald[135]: Root directory /run/log/journal added.
+[   45.954805] systemd-journald[135]: Considering /run/log/journal/3692605c365e4242a1091d831127a3ab.
+[   45.957107] systemd[1]: systemd-journal-flush.service: cgroup is empty
+[   45.959729] systemd-journald[135]: Directory /run/log/journal/3692605c365e4242a1091d831127a3ab added.
+[   45.962152] systemd-journald[135]: File /run/log/journal/3692605c365e4242a1091d831127a3ab/system.journal added.
+[   45.964857] systemd[1]: Failed to send unit change signal for systemd-journal-flush.service: Transport endpoint is not connected
+[   45.974667] systemd[1]: Failed to send unit change signal for systemd-tmpfiles-setup.service: Transport endpoint is not connected
+[   45.984517] systemd[1]: Received SIGCHLD from PID 181 (n/a).
+[   45.994350] systemd[1]: Got disconnect on private connection.
+[   46.014029] systemd[1]: Accepted new private connection.
+[   46.023879] systemd[1]: Got disconnect on private connection.
+[   46.043560] systemd[1]: Accepted new private connection.
+[   46.053387] systemd[1]: Got message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/agent interface=org.freedesktop.systemd1.Agent member=Released cookie=1 reply_cookie=0 error=n/a
+[   46.068142] systemd[1]: Got message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/agent interface=org.freedesktop.systemd1.Agent member=Released cookie=1 reply_cookie=0 error=n/a
+[   46.141963] systemd[1]: systemd-update-utmp.service changed dead -> start
+[   46.151805] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/unit/systemd_2dupdate_2dutmp_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=1 reply_cookie=0 error=n/a
+[   46.166561] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/unit/systemd_2dupdate_2dutmp_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=2 reply_cookie=0 error=n/a
+[   46.181339] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/unit/systemd_2dupdate_2dutmp_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=1 reply_cookie=0 error=n/a
+[   46.196069] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/unit/systemd_2dupdate_2dutmp_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=2 reply_cookie=0 error=n/a
+[   46.210840] mwifiex_sdio mmc2:0001:1: FW already running! Skip FW dnld
+[   46.213757] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/job/34 interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=3 reply_cookie=0 error=n/a
+[   46.225590] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/job/34 interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=3 reply_cookie=0 error=n/a
+[   46.417691] mwifiex_sdio mmc2:0001:1: WLAN FW is active
+[   46.801405] mwifiex_sdio mmc2:0001:1: ignoring F/W country code US
+[   46.820082] mwifiex_sdio mmc2:0001:1: driver_version = mwifiex 1.0 (14.66.11.p151) 
+[   46.825845] systemd[1]: sys-devices-12230000.dwmmc3-mmc_host-mmc2-mmc2:0001-mmc2:0001:1-ieee80211-phy0-rfkill0.device changed dead -> plugged
+[   46.835680] systemd[1]: Trying to enqueue job systemd-rfkill@rfkill0.service/start/fail
+[   46.845527] systemd[1]: Installed new job systemd-rfkill@rfkill0.service/start as 93
+[   46.855349] systemd[1]: Installed new job system-systemd\x2drfkill.slice/start as 94
+[   46.865209] systemd[1]: Enqueued job systemd-rfkill@rfkill0.service/start as 93
+[   46.875038] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=UnitNew cookie=4 reply_cookie=0 error=n/a
+[   46.889788] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=UnitNew cookie=4 reply_cookie=0 error=n/a
+[   46.904576] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=UnitNew cookie=5 reply_cookie=0 error=n/a
+[   46.919322] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=UnitNew cookie=5 reply_cookie=0 error=n/a
+[   46.939005] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=UnitNew cookie=6 reply_cookie=0 error=n/a
+[   46.958685] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=UnitNew cookie=6 reply_cookie=0 error=n/a
+[   46.978353] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobNew cookie=7 reply_cookie=0 error=n/a
+[   46.998067] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobNew cookie=7 reply_cookie=0 error=n/a
+[   47.017729] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobNew cookie=8 reply_cookie=0 error=n/a
+[   47.037397] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobNew cookie=8 reply_cookie=0 error=n/a
+[   47.062004] systemd[1]: sys-subsystem-bluetooth-devices-hci0.device changed dead -> plugged
+[   47.076776] systemd[1]: sys-devices-virtual-bluetooth-hci0.device changed dead -> plugged
+[   47.091524] systemd[1]: Trying to enqueue job bluetooth.target/start/fail
+[   47.106277] systemd[1]: Installed new job bluetooth.target/start as 98
+[   47.121038] systemd[1]: Enqueued job bluetooth.target/start as 98
+[   47.135860] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=UnitNew cookie=9 reply_cookie=0 error=n/a
+[   47.160393] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=UnitNew cookie=9 reply_cookie=0 error=n/a
+[   47.180075] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=UnitNew cookie=10 reply_cookie=0 error=n/a
+[   47.199758] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=UnitNew cookie=10 reply_cookie=0 error=n/a
+[   47.219434] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=UnitNew cookie=11 reply_cookie=0 error=n/a
+[   47.239120] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=UnitNew cookie=11 reply_cookie=0 error=n/a
+[   47.258800] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobNew cookie=12 reply_cookie=0 error=n/a
+[   47.278482] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobNew cookie=12 reply_cookie=0 error=n/a
+[   47.308002] systemd[1]: bluetooth.target changed dead -> active
+[   47.322759] systemd[1]: Job bluetooth.target/start finished, result=done
+[   47.352288] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobRemoved cookie=13 reply_cookie=0 error=n/a
+[   47.371955] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobRemoved cookie=13 reply_cookie=0 error=n/a
+[   47.401480] systemd[1]: system-systemd\x2drfkill.slice changed dead -> active
+[   47.416248] systemd[1]: Job system-systemd\x2drfkill.slice/start finished, result=done
+[   47.445791] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobRemoved cookie=14 reply_cookie=0 error=n/a
+[   47.465453] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobRemoved cookie=14 reply_cookie=0 error=n/a
+[   47.539240] systemd[1]: systemd-rfkill@rfkill0.service changed dead -> start
+[   47.554005] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/unit/systemd_2drfkill_40rfkill0_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=15 reply_cookie=0 error=n/a
+[   47.573685] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/unit/systemd_2drfkill_40rfkill0_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=16 reply_cookie=0 error=n/a
+[   47.593356] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/unit/systemd_2drfkill_40rfkill0_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=15 reply_cookie=0 error=n/a
+[   47.613032] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/unit/systemd_2drfkill_40rfkill0_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=16 reply_cookie=0 error=n/a
+[   47.632710] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/unit/system_2dsystemd_5cx2drfkill_2eslice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=17 reply_cookie=0 error=n/a
+[   47.652399] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/unit/system_2dsystemd_5cx2drfkill_2eslice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=17 reply_cookie=0 error=n/a
+[   47.672065] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/unit/bluetooth_2etarget interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=18 reply_cookie=0 error=n/a
+[   47.686823] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/unit/bluetooth_2etarget interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=18 reply_cookie=0 error=n/a
+[   47.701607] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/job/93 interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=19 reply_cookie=0 error=n/a
+[   47.716344] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/job/93 interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=19 reply_cookie=0 error=n/a
+[   48.512727] systemd-journald[135]: Root directory /run/log/journal removed.
+[   48.517185] systemd-journald[135]: Directory /run/log/journal/3692605c365e4242a1091d831127a3ab removed.
+[   48.521550] systemd-journald[135]: mmap cache statistics: 92385 hit, 1 miss
+[   52.479005] systemd[1]: dbus.socket changed listening -> running
+[   52.690504] systemd[1]: systemd-logind.service: Got notification message from PID 204 (WATCHDOG=1...)
+[   52.897124] systemd[1]: Sent message type=signal sender=n/a destination=n/a object=/org/freedesktop/systemd1/unit/systemd_2dlogind_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=14 reply_cookie=0 error=n/a
+[   64.110376] systemd[1]: Accepted new private connection.

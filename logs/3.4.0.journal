@@ -1,0 +1,98 @@
+-- Logs begin at Thu 2014-09-11 11:51:27 EDT, end at Sat 2014-09-20 11:52:48 EDT. --
+Sep 20 11:52:33 lyme systemd-journal[125]: Runtime journal is using 8.0M (max allowed 100.9M, trying to leave 151.3M free of 1001.2M available → current limit 100.9M).
+Sep 20 11:52:33 lyme systemd-journal[125]: Runtime journal is using 8.0M (max allowed 100.9M, trying to leave 151.3M free of 1001.2M available → current limit 100.9M).
+Sep 20 11:52:33 lyme systemd-journal[125]: Journal started
+Sep 20 11:52:33 lyme systemd[1]: Starting Slices.
+Sep 20 11:52:33 lyme systemd[1]: Reached target Slices.
+Sep 20 11:52:33 lyme systemd[1]: Starting Remount Root and Kernel File Systems...
+Sep 20 11:52:33 lyme systemd[1]: Starting system-systemd\x2dfsck.slice.
+Sep 20 11:52:33 lyme systemd[1]: Created slice system-systemd\x2dfsck.slice.
+Sep 20 11:52:33 lyme systemd[1]: Expecting device dev-mmcblk1p2.device...
+Sep 20 11:52:33 lyme systemd[1]: Mounted POSIX Message Queue File System.
+Sep 20 11:52:33 lyme systemd[1]: Mounted Debug File System.
+Sep 20 11:52:33 lyme systemd[1]: Mounted Temporary Directory.
+Sep 20 11:52:33 lyme systemd[1]: Started Create list of required static device nodes for the current kernel.
+Sep 20 11:52:33 lyme systemd[1]: Started Apply Kernel Variables.
+Sep 20 11:52:33 lyme systemd[1]: Started Setup Virtual Console.
+Sep 20 11:52:33 lyme systemd[1]: Started Remount Root and Kernel File Systems.
+Sep 20 11:52:33 lyme systemd[1]: Started udev Coldplug all Devices.
+Sep 20 11:52:33 lyme systemd[1]: Started Rebuild Hardware Database.
+Sep 20 11:52:33 lyme systemd[1]: Started Create System Users.
+Sep 20 11:52:33 lyme systemd[1]: Started Rebuild Dynamic Linker Cache.
+Sep 20 11:52:33 lyme systemd[1]: Started First Boot Wizard.
+Sep 20 11:52:33 lyme systemd[1]: Starting Load/Save Random Seed...
+Sep 20 11:52:33 lyme systemd[1]: Starting Create Static Device Nodes in /dev...
+Sep 20 11:52:33 lyme systemd[1]: Started Load/Save Random Seed.
+Sep 20 11:52:33 lyme systemd[1]: Started Create Static Device Nodes in /dev.
+Sep 20 11:52:33 lyme systemd[1]: Starting udev Kernel Device Manager...
+Sep 20 11:52:33 lyme systemd[1]: Starting Local File Systems (Pre).
+Sep 20 11:52:33 lyme systemd[1]: Reached target Local File Systems (Pre).
+Sep 20 11:52:33 lyme systemd[1]: Started udev Kernel Device Manager.
+Sep 20 11:52:33 lyme systemd[1]: Found device /dev/mmcblk1p2.
+Sep 20 11:52:33 lyme systemd[1]: Starting File System Check on /dev/mmcblk1p2...
+Sep 20 11:52:33 lyme systemd[1]: Starting system-systemd\x2dbacklight.slice.
+Sep 20 11:52:33 lyme systemd[1]: Created slice system-systemd\x2dbacklight.slice.
+Sep 20 11:52:33 lyme systemd[1]: Starting Load/Save Screen Backlight Brightness of backlight:pwm-backlight.0...
+Sep 20 11:52:34 lyme systemd-fsck[147]: /dev/mmcblk1p2: clean, 15/4096 files, 9013/16384 blocks
+Sep 20 11:52:34 lyme systemd[1]: Started File System Check on /dev/mmcblk1p2.
+Sep 20 11:52:34 lyme systemd[1]: Started Load/Save Screen Backlight Brightness of backlight:pwm-backlight.0.
+Sep 20 11:52:34 lyme systemd[1]: Starting Sound Card.
+Sep 20 11:52:34 lyme systemd[1]: Reached target Sound Card.
+Sep 20 11:52:34 lyme systemd[1]: Mounting /boot...
+Sep 20 11:52:34 lyme systemd[1]: Mounted /boot.
+Sep 20 11:52:34 lyme systemd[1]: Starting Local File Systems.
+Sep 20 11:52:34 lyme systemd[1]: Reached target Local File Systems.
+Sep 20 11:52:34 lyme systemd[1]: Started Rebuild Journal Catalog.
+Sep 20 11:52:34 lyme systemd[1]: Started Update is Completed.
+Sep 20 11:52:34 lyme systemd[1]: Starting Trigger Flushing of Journal to Persistent Storage...
+Sep 20 11:52:34 lyme systemd[1]: Starting Create Volatile Files and Directories...
+Sep 20 11:52:34 lyme systemd[1]: Started Create Volatile Files and Directories.
+Sep 20 11:52:34 lyme systemd-journal[125]: Permanent journal is using 216.0M (max allowed 1.4G, trying to leave 2.2G free of 10.7G available → current limit 1.4G).
+Sep 20 11:52:35 lyme systemd-journal[125]: Time spent on flushing to /var is 950.538ms for 49 entries.
+Sep 20 11:52:35 lyme haveged[175]: haveged starting up
+Sep 20 11:52:36 lyme dbus[178]: [system] Successfully activated service 'org.freedesktop.systemd1'
+Sep 20 11:52:36 lyme haveged[179]: haveged: ver: 1.9.1; arch: generic; vend: ; build: (gcc 4.8.2 CTV); collect: 128K
+Sep 20 11:52:36 lyme haveged[179]: haveged: cpu: (VC); data: 16K (D); inst: 16K (D); idx: 8/40; sz: 15180/73928
+Sep 20 11:52:36 lyme haveged[179]: haveged: tot tests(BA8): A:1/1 B:1/1 continuous tests(B):  last entropy estimate 7.99634
+Sep 20 11:52:36 lyme haveged[179]: haveged: fills: 0, generated: 0
+Sep 20 11:52:34 lyme systemd[1]: Started Trigger Flushing of Journal to Persistent Storage.
+Sep 20 11:52:34 lyme systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+Sep 20 11:52:34 lyme systemd[1]: Started Update UTMP about System Boot/Shutdown.
+Sep 20 11:52:34 lyme systemd[1]: Starting System Initialization.
+Sep 20 11:52:34 lyme systemd[1]: Reached target System Initialization.
+Sep 20 11:52:34 lyme systemd[1]: Starting Daily verification of password and group files.
+Sep 20 11:52:34 lyme systemd[1]: Started Daily verification of password and group files.
+Sep 20 11:52:34 lyme systemd[1]: Starting Daily rotation of log files.
+Sep 20 11:52:34 lyme systemd[1]: Started Daily rotation of log files.
+Sep 20 11:52:34 lyme systemd[1]: Starting Daily man-db cache update.
+Sep 20 11:52:34 lyme systemd[1]: Started Daily man-db cache update.
+Sep 20 11:52:36 lyme systemd-networkd[183]: lo              : gained carrier
+Sep 20 11:52:36 lyme systemd-logind[177]: New seat seat0.
+Sep 20 11:52:36 lyme systemd[1]: Created slice system-systemd\x2drfkill.slice.
+Sep 20 11:52:36 lyme systemd[1]: Starting Load/Save RF Kill Switch Status of rfkill0...
+Sep 20 11:52:36 lyme systemd[1]: Started Network Service.
+Sep 20 11:52:36 lyme systemd[1]: Starting Network Name Resolution...
+Sep 20 11:52:36 lyme systemd[1]: Started Load/Save RF Kill Switch Status of rfkill0.
+Sep 20 11:52:37 lyme systemd-resolved[189]: Using system hostname 'lyme'.
+Sep 20 11:52:37 lyme systemd[1]: Started Network Name Resolution.
+Sep 20 11:52:48 lyme login[187]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Sep 20 11:52:48 lyme systemd[1]: Starting user-0.slice.
+Sep 20 11:52:48 lyme systemd[1]: Created slice user-0.slice.
+Sep 20 11:52:48 lyme systemd-logind[177]: New session c1 of user root.
+Sep 20 11:52:48 lyme systemd[1]: Starting Session c1 of user root.
+Sep 20 11:52:48 lyme systemd[1]: Started Session c1 of user root.
+Sep 20 11:52:48 lyme systemd[1]: Starting User Manager for UID 0...
+Sep 20 11:52:48 lyme systemd[193]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep 20 11:52:48 lyme systemd[193]: Starting Paths.
+Sep 20 11:52:48 lyme systemd[193]: Reached target Paths.
+Sep 20 11:52:48 lyme systemd[193]: Starting Timers.
+Sep 20 11:52:48 lyme systemd[193]: Reached target Timers.
+Sep 20 11:52:48 lyme systemd[193]: Starting Sockets.
+Sep 20 11:52:48 lyme systemd[193]: Reached target Sockets.
+Sep 20 11:52:48 lyme systemd[193]: Starting Basic System.
+Sep 20 11:52:48 lyme systemd[193]: Reached target Basic System.
+Sep 20 11:52:48 lyme systemd[193]: Starting Default.
+Sep 20 11:52:48 lyme systemd[193]: Reached target Default.
+Sep 20 11:52:48 lyme systemd[193]: Startup finished in 49ms.
+Sep 20 11:52:48 lyme systemd[1]: Started User Manager for UID 0.
+Sep 20 11:52:48 lyme login[187]: ROOT LOGIN ON tty1
